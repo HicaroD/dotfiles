@@ -16,14 +16,10 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'mattn/emmet-vim'
 Plug 'Yggdroot/indentLine'
-Plug 'HicaroD/Icarus'
-Plug 'eemed/sitruuna.vim'
 
 call plug#end()
 
-set termguicolors
-colorscheme sitruuna
-set laststatus=2
+highlight Comment ctermfg=green
 
 nnoremap <C-p> :FZF<CR>
 
