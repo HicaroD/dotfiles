@@ -19,7 +19,9 @@ Plug 'Yggdroot/indentLine'
 
 call plug#end()
 
-highlight Comment ctermfg=green
+set background=dark
+set termguicolors
+colorscheme sitrunna
 
 nnoremap <C-p> :FZF<CR>
 
