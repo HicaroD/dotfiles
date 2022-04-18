@@ -16,12 +16,12 @@ call plug#begin()
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'mattn/emmet-vim'
 Plug 'Yggdroot/indentLine'
+Plug 'lifepillar/vim-solarized8'
 
 call plug#end()
 
-set background=dark
 set termguicolors
-colorscheme sitrunna
+colorscheme solarized8
 
 nnoremap <C-p> :FZF<CR>
 
@@ -33,5 +33,3 @@ inoremap ' ''<ESC>ha
 inoremap ` ``<ESC>ha
 inoremap [ []<ESC>ha
 inoremap < <><ESC>ha
-
-let g:python_highlight_all = 1
