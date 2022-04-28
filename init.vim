@@ -1,5 +1,11 @@
+" Display
 syntax on
 set number
+set nowrap
+set list
+set listchars=
+set listchars+=precedes:<,extends:>
+set listchars+=tab:⇥\
 set ai
 
 set nobackup
