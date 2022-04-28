@@ -20,6 +20,8 @@ set noswapfile
 " Tabs and whitepaces
 set sw=4 et
 set softtabstop=-1
+set tabstop=8
+set noexpandtab
 set ts=8
 set nosmartindent
 set cin noai
