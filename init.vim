@@ -2,20 +2,31 @@
 syntax on
 set number
 set nowrap
+set ruler
+set laststatus=2
 set list
 set listchars=
 set listchars+=precedes:<,extends:>
-set listchars+=tab:⇥\
-set ai
+set listchars+=tab:⇥\ 
+set sidescroll=5
+set scrolloff=5
+set shortmess=a
+set shortmess+=tToO
 
 set nobackup
 set nowritebackup 
 set noswapfile
 
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
-set expandtab
+" Tabs and whitepaces
+set sw=4 et
+set softtabstop=-1
+set ts=8
+set nosmartindent
+set cin noai
+set tw=60 cc=60
+set nojoinspaces
+set formatoptions=cloqr
+set cinoptions=l1
 
 call plug#begin()
 
