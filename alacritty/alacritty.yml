@@ -1,0 +1,17 @@
+font:
+  normal:
+    family: Fantasque Sans Mono
+    style: Regular
+
+  bold:
+    family: Fantasque Sans Mono
+    style: Bold
+
+  italic:
+    family: Fantasque Sans Mono
+    style: Italic
+
+  size: 19
+
+env:
+    TERM: xterm-256color
