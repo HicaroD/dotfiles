@@ -4,14 +4,6 @@ set number
 set nowrap
 set ruler
 set laststatus=2
-set list
-set listchars=
-set listchars+=precedes:<,extends:>
-set listchars+=tab:⇥\ 
-set sidescroll=5
-set scrolloff=5
-set shortmess=a
-set shortmess+=tToO
 
 set nobackup
 set nowritebackup 
