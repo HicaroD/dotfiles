@@ -184,3 +184,7 @@ bindsym $mod+r mode "resize"
 bar {
         status_command i3status
 }
+
+# Workspaces
+workspace 1 output HDMI-1
+workspace 2 output eDP-1
