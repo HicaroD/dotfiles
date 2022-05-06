@@ -41,7 +41,3 @@ inoremap " ""<ESC>ha
 inoremap ' ''<ESC>ha
 inoremap ` ``<ESC>ha
 inoremap [ []<ESC>ha
-
-" Snippets configuration
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsListSnippets="<c-l>"
