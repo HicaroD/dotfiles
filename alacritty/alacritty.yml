@@ -17,7 +17,7 @@ env:
     TERM: xterm-256color
 
 
-# Credits to Solarized Dark: https://github.com/eendroroy/alacritty-theme/blob/master/themes/solarized_dark.yaml
+# Credits: https://github.com/eendroroy/alacritty-theme/blob/master/themes/solarized_dark.yaml
 colors:
   # Default colors
   primary:
