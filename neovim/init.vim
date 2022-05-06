@@ -36,8 +36,6 @@ Plug 'mattn/emmet-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'lifepillar/vim-solarized8'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
 
 call plug#end()
 
