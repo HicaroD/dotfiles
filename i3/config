@@ -197,6 +197,8 @@ bar {
 # Workspaces
 workspace 1 output HDMI-1
 workspace 2 output eDP-1
+
+# Colors
 client.focused #689d6a #689d6a #282828 #282828
 client.focused_inactive #1d2021 #1d2021 #928374 #282828
 client.unfocused #32302f #32302f #928374 #282828
