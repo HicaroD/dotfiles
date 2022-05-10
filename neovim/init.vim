@@ -28,11 +28,12 @@ Plug 'mattn/emmet-vim'
 Plug 'Yggdroot/indentLine'
 Plug 'lifepillar/vim-solarized8'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'lifepillar/vim-gruvbox8'
 
 call plug#end()
 
 set termguicolors
-colorscheme solarized8
+colorscheme gruvbox8
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
