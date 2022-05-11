@@ -11,7 +11,7 @@ font:
     family: Fantasque Sans Mono
     style: Italic
 
-  size: 19
+  size: 20
 
 env:
     TERM: xterm-256color
