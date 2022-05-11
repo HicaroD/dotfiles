@@ -36,6 +36,9 @@ Plug 'lifepillar/vim-gruvbox8'
 call plug#end()
 
 set termguicolors
+let g:gruvbox_italic=0
+let g:gruvbox_italicize_comments=0
+let g:gruvbox_italicize_strings=0
 colorscheme gruvbox8
 
 " Pairs autocompletion configuration
