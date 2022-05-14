@@ -29,7 +29,8 @@ call plug#begin()
 
 Plug 'mattn/emmet-vim'
 Plug 'lifepillar/vim-solarized8'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
@@ -43,3 +44,5 @@ inoremap " ""<ESC>ha
 inoremap ' ''<ESC>ha
 inoremap ` ``<ESC>ha
 inoremap [ []<ESC>ha
+
+nmap <C-p> :Files<Enter>
