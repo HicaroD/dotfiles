@@ -35,7 +35,7 @@ Plug 'junegunn/fzf.vim'
 call plug#end()
 
 set termguicolors
-colorscheme solarized8
+colorscheme desert
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
