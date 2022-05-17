@@ -20,7 +20,6 @@ set noexpandtab
 set ts=8
 set nosmartindent
 set cin noai
-set tw=60 cc=60
 set nojoinspaces
 set formatoptions=cloqr
 set cinoptions=l1
