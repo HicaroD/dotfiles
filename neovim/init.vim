@@ -27,7 +27,6 @@ set cinoptions=l1
 call plug#begin()
 
 Plug 'mattn/emmet-vim'
-Plug 'lifepillar/vim-solarized8'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
