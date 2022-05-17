@@ -34,8 +34,11 @@ Plug 'junegunn/fzf.vim'
 
 call plug#end()
 
+" Color scheme configuration
 set termguicolors
 colorscheme desert
+" 0x282828
+hi! Normal guibg=0x282828
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
