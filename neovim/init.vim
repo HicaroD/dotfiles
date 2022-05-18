@@ -34,9 +34,7 @@ call plug#end()
 
 " Color scheme configuration
 set termguicolors
-colorscheme desert
-hi! Normal guibg=0x282828
-hi! LineNr guifg=grey
+colorscheme hicaro
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
