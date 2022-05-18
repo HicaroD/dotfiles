@@ -4,7 +4,6 @@ set number
 set nowrap
 set ruler
 set laststatus=2
-set list
 set listchars=
 set listchars+=precedes:<,extends:>
 
