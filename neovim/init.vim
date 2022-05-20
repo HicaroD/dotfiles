@@ -4,8 +4,8 @@ set number
 set nowrap
 set ruler
 set laststatus=2
-set listchars=
-set listchars+=precedes:<,extends:>
+set list
+set listchars=tab:\ \ ,precedes:«,extends:»
 
 set nobackup
 set nowritebackup 
