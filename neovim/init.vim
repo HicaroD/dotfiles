@@ -29,12 +29,13 @@ Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'bfrg/vim-cpp-modern'
+Plug 'tomasiser/vim-code-dark'
 
 call plug#end()
 
 " Color scheme configuration
 set termguicolors
-colorscheme hicaro
+colorscheme codedark
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
