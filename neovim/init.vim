@@ -28,6 +28,7 @@ call plug#begin()
 Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'bfrg/vim-cpp-modern'
 
 call plug#end()
 
