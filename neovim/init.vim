@@ -27,8 +27,8 @@ call plug#begin()
 Plug 'mattn/emmet-vim'
 Plug 'bfrg/vim-cpp-modern'
 Plug 'neoclide/coc.nvim', {'branch': 'release'} " Only for C or C++
-Plug 'ryanoasis/vim-devicons'
-Plug 'preservim/nerdtree'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Color scheme configuration
@@ -44,5 +44,5 @@ inoremap ` ``<ESC>ha
 inoremap [ []<ESC>ha
 
 " NERDTree configuration
-nmap <C-p> :NERDTree<Enter>
-nmap <ESC> :NERDTreeClose<Enter>
+" Only show files/directories that are not ignored by Git
+nmap <C-p> :GFiles<Enter>
