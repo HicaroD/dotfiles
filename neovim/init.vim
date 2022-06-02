@@ -47,4 +47,4 @@ inoremap [ []<ESC>ha
 
 " NERDTree configuration
 " Only show files/directories that are not ignored by Git
-nmap <C-p> :GFiles<Enter>
+nmap <C-p> :Files<Enter>
