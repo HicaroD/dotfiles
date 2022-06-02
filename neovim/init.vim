@@ -33,7 +33,9 @@ call plug#end()
 
 " Color scheme configuration
 set termguicolors 
-colorscheme vscode
+let g:tokyonight_disable_italic_comment=1
+let g:tokyonight_enable_italic=0
+colorscheme tokyonight
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
