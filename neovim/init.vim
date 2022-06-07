@@ -25,10 +25,9 @@ set cinoptions=l1
 
 call plug#begin()
 Plug 'mattn/emmet-vim'
-Plug 'bfrg/vim-cpp-modern'
-Plug 'neoclide/coc.nvim', {'branch': 'release'} " Only for C or C++
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'ervandew/supertab'
 call plug#end()
 
 " Color scheme configuration
