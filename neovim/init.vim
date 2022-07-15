@@ -40,7 +40,7 @@ let g:solarized_italics=0
 colorscheme hicaro
 
 " Leader key
-let mapleader=","
+let mapleader="'"
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
@@ -59,7 +59,8 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " Tabs
 map <Leader>tn :tabnew<cr>
-map <Leader>t<leader> :tabnext
 map <Leader>tm :tabmove
 map <Leader>tc :tabclose<cr>
 map <Leader>to :tabonly<cr>
+nmap <C-h> :tabprevious<CR>
+nmap <C-l> :tabnext<CR>
