@@ -28,11 +28,19 @@ Plug 'mattn/emmet-vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab'
+Plug 'tpope/vim-commentary'
+Plug 'Yggdroot/indentLine'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'bfrg/vim-cpp-modern'
 call plug#end()
 
 " Color scheme configuration
-set termguicolors 
+set termguicolors
+let g:solarized_italics=0
 colorscheme hicaro
+
+" Leader key
+let mapleader=","
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
@@ -45,3 +53,13 @@ inoremap [ []<ESC>ha
 " NERDTree configuration
 " Only show files/directories that are not ignored by Git
 nmap <C-p> :Files<Enter>
+
+" SuperTab
+let g:SuperTabDefaultCompletionType = "<c-n>"
+
+" Tabs
+map <Leader>tn :tabnew<cr>
+map <Leader>t<leader> :tabnext
+map <Leader>tm :tabmove
+map <Leader>tc :tabclose<cr>
+map <Leader>to :tabonly<cr>
