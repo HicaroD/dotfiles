@@ -24,7 +24,7 @@ wireless wlan0 {
 
 
 battery 0 {
-        format = "🔋 %status %percentage %remaining"
+        format = "🔋%percentage %remaining"
 }
 
 
