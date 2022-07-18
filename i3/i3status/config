@@ -10,15 +10,15 @@ general {
 
 order += "disk /"
 order += "disk /home"
-order += "wireless wlan0"
+order += "wireless _first_"
 order += "battery 0"
 order += "cpu_usage 0"
 order += "cpu_temperature 0"
 order += "tztime local"
 order += "load"
 
-wireless wlan0 {
-        format_up = "📶: %quality"
+wireless _first_ {
+        format_up = "📶:%quality"
         format_down = "📶: down"
 }
 
