@@ -50,8 +50,7 @@ inoremap ' ''<ESC>ha
 inoremap ` ``<ESC>ha
 inoremap [ []<ESC>ha
 
-" NERDTree configuration
-" Only show files/directories that are not ignored by Git
+" FZF configuration
 nmap <C-p> :Files<Enter>
 
 " SuperTab
