@@ -1,0 +1,55 @@
+
+general {
+   colors = true
+   color_good = "#859900"
+   color_bad = "#dc322f"
+   color_degraded = "#cb4b16"
+   output_format = "i3bar"
+   interval = 2
+}
+
+order += "disk /"
+order += "disk /home"
+order += "wireless wlan0"
+order += "battery 0"
+order += "cpu_usage 0"
+order += "cpu_temperature 0"
+order += "tztime local"
+order += "load"
+
+wireless wlan0 {
+        format_up = "📶: %quality"
+        format_down = "📶: down"
+}
+
+
+battery 0 {
+        format = "🔋 %status %percentage %remaining"
+}
+
+
+
+tztime local {
+        format = "🗓️%Y-%m-%d 🕑%H:%M:%S"
+}
+
+load {
+        format = "%1min"
+}
+
+
+disk "/" {
+        format = "💾%avail"
+}
+
+disk "/home" {
+        format = "💾%avail"
+}
+
+cpu_usage {
+        format = " 📉%usage "
+}
+
+cpu_temperature 0 {
+        format = "🌡️%degrees°C "
+}
