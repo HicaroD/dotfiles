@@ -62,3 +62,6 @@ map <Leader>tc :tabclose<cr>
 map <Leader>to :tabonly<cr>
 nmap <C-h> :tabprevious<CR>
 nmap <C-l> :tabnext<CR>
+
+" Grep config
+nnoremap <C-f> :Rg 
