@@ -1,4 +1,5 @@
 {
     "diagnostic.enable": false,
-    "clangd.inlayHints.enable": false
+    "clangd.inlayHints.enable": false,
+    "clangd.fallbackFlags": ["-std=c++20"]
 }
