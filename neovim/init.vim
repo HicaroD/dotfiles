@@ -25,8 +25,6 @@ set cinoptions=l1
 
 call plug#begin()
 Plug 'mattn/emmet-vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'ervandew/supertab'
 Plug 'tpope/vim-commentary'
 Plug 'Yggdroot/indentLine'
@@ -49,9 +47,6 @@ inoremap ' ''<ESC>ha
 inoremap ` ``<ESC>ha
 inoremap [ []<ESC>ha
 
-" FZF configuration
-nmap <C-p> :Files<Enter>
-
 " SuperTab
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
@@ -65,3 +60,17 @@ nmap <C-l> :tabnext<CR>
 
 " Grep config
 nnoremap <C-f> :Rg 
+
+" Netrw - built-in file explorer
+" Credits for the config: https://stackoverflow.com/a/64794436
+function! ToggleVExplorer()
+    Lexplore
+    vertical resize 15
+endfunction
+map <silent> <C-p> :call ToggleVExplorer()<CR>
+
+let g:netrw_winsize = -20
+let g:netrw_banner = 0
+let g:netrw_liststyle = 3
+let g:netrw_sort_sequence = '[\/]$,*'
+let g:netrw_browse_split = 4
