@@ -59,7 +59,13 @@ nmap <C-h> :tabprevious<CR>
 nmap <C-l> :tabnext<CR>
 
 " Grep config
-nnoremap <C-f> :Rg 
+if executable("rg")
+    set grepprg=rg
+    set grepprg+=\ --color\ never\ --column\ --line-number\ --no-heading\ $*
+    set grepformat=%f:%l:%c:%m
+endif
+
+nnoremap <C-f> :grep 
 
 " Netrw - built-in file explorer
 " Credits for the config: https://stackoverflow.com/a/64794436
