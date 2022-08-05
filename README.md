@@ -3,6 +3,7 @@
 | Tools						      |
 |-----------------------------------------------------|
 | [i3][] (Window manager)                     	      |
+| [Ripgrep][] (Fuzzy finder)			      |
 | [Neovim][] (Text editor)                    	      |
 | [Alacritty][] (Terminal emulator)           	      |
 | [Manjaro Arch][] ([GNOME][] as desktop environment) |
@@ -12,3 +13,4 @@
 [Alacritty]: https://alacritty.org/
 [Manjaro Arch]: https://manjaro.org/
 [GNOME]: https://www.gnome.org/
+[Ripgrep]: https://github.com/BurntSushi/ripgrep
