@@ -30,6 +30,8 @@ Plug 'tpope/vim-commentary'
 Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'bfrg/vim-cpp-modern'
+Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Color scheme configuration
@@ -64,19 +66,8 @@ if executable("rg")
     set grepprg+=\ --color\ never\ --column\ --line-number\ --no-heading\ $*
     set grepformat=%f:%l:%c:%m
 endif
-
 nnoremap <C-f> :grep 
 
-" Netrw - built-in file explorer
-" Credits for the config: https://stackoverflow.com/a/64794436
-function! ToggleVExplorer()
-    Lexplore
-    vertical resize 15
-endfunction
-map <silent> <C-p> :call ToggleVExplorer()<CR>
-
-let g:netrw_winsize = -20
-let g:netrw_banner = 0
-let g:netrw_liststyle = 3
-let g:netrw_sort_sequence = '[\/]$,*'
-let g:netrw_browse_split = 4
+" NERDTree configuration
+nnoremap <C-p> :NERDTreeToggle<Enter>
+let g:NERDTreeWinSize=20
