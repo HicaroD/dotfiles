@@ -24,14 +24,13 @@ set formatoptions=cloqr
 set cinoptions=l1
 
 call plug#begin()
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'mattn/emmet-vim'
 Plug 'ervandew/supertab'
-Plug 'tpope/vim-commentary'
 Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'bfrg/vim-cpp-modern'
-Plug 'preservim/nerdtree'
-Plug 'ryanoasis/vim-devicons'
 call plug#end()
 
 " Color scheme configuration
@@ -66,8 +65,8 @@ if executable("rg")
     set grepprg+=\ --color\ never\ --column\ --line-number\ --no-heading\ $*
     set grepformat=%f:%l:%c:%m
 endif
-nnoremap <C-f> :grep 
+nnoremap <C-f> :Rg<Enter> 
 
-" NERDTree configuration
-nnoremap <C-p> :NERDTreeToggle<Enter>
-let g:NERDTreeWinSize=20
+" FZF
+"nnoremap <C-p> :GFiles<Enter>
+nnoremap <expr> <C-p> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
