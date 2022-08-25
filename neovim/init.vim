@@ -31,11 +31,14 @@ Plug 'ervandew/supertab'
 Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'bfrg/vim-cpp-modern'
+Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 " Color scheme configuration
 set termguicolors
-colorscheme vscode
+let g:solarized_italics=0
+colorscheme hicaro
 
 " Leader key
 let mapleader="'"
