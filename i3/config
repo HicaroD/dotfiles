@@ -210,6 +210,5 @@ client.focused_inactive #002b36 #073642 #839496 #073642
 client.unfocused        #002b36 #073642 #839496 #073642
 client.urgent           #002b36 #dc322f #fdf6e3 #002b36
 
-workspace 1 output HDMI-1
-workspace 2 output eDP-1
+workspace 1 output eDP-1
 
