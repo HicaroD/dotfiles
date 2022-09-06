@@ -23,17 +23,6 @@ set nojoinspaces
 set formatoptions=cloqr
 set cinoptions=l1
 
-call plug#begin()
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-Plug 'mattn/emmet-vim'
-Plug 'ervandew/supertab'
-Plug 'Yggdroot/indentLine'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'bfrg/vim-cpp-modern'
-Plug 'pangloss/vim-javascript'
-call plug#end()
-
 " Color scheme configuration
 set termguicolors
 let g:solarized_italics=0
@@ -50,9 +39,6 @@ inoremap ' ''<ESC>ha
 inoremap ` ``<ESC>ha
 inoremap [ []<ESC>ha
 
-" SuperTab
-let g:SuperTabDefaultCompletionType = "<c-n>"
-
 " Tabs
 map <Leader>tn :tabnew<cr>
 map <Leader>tm :tabmove
@@ -68,7 +54,3 @@ if executable("rg")
     set grepformat=%f:%l:%c:%m
 endif
 nnoremap <C-f> :Rg<Enter> 
-
-" FZF
-"nnoremap <C-p> :GFiles<Enter>
-nnoremap <expr> <C-p> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
