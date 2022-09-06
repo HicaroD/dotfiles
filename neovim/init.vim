@@ -32,7 +32,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'bfrg/vim-cpp-modern'
 Plug 'pangloss/vim-javascript'
-Plug 'maxmellon/vim-jsx-pretty'
 call plug#end()
 
 " Color scheme configuration
