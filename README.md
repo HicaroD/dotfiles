@@ -1,15 +1,15 @@
 # Dotfiles
 
-| Tools						                             |
+| Tools						         |
 |--------------------------------------------------------|
 | [i3][] (Window manager)                     	         |
-| [Ripgrep][] (Fuzzy finder)			                 |
-| [Visual Studio Code with Vim keybinds][] (Text editor) |
+| [Ripgrep][] (Fuzzy finder)			         |
+| [Neovim][] (Text editor)				 |
 | [Alacritty][] (Terminal emulator)           	         |
 | [Manjaro Arch][] ([GNOME][] as desktop environment)    |
 
 [i3]: https://i3wm.org/
-[Visual Studio Code with Vim keybinds]: https://code.visualstudio.com/
+[Neovim]: https://github.com/neovim/neovim
 [Alacritty]: https://alacritty.org/
 [Manjaro Arch]: https://manjaro.org/
 [GNOME]: https://www.gnome.org/
