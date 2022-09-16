@@ -25,16 +25,8 @@ set cinoptions=l1
 
 call plug#begin()
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
-
 Plug 'ervandew/supertab'
-
 Plug 'itchyny/lightline.vim'
-
-Plug 'preservim/nerdtree'
 call plug#end()
 
 " Color scheme configuration
@@ -78,7 +70,7 @@ nnoremap <expr> <C-p> (len(system('git rev-parse')) ? ':Files' : ':GFiles --excl
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " coc-snippets
-imap <C-l> <Plug>(coc-snippets-expand)
+imap <A-l> <Plug>(coc-snippets-expand)
 
 " NerdTree
 nnoremap <C-t> :NERDTreeToggle<CR>
