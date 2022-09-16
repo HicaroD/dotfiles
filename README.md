@@ -4,12 +4,11 @@
 |--------------------------------------------------------|
 | [i3][] (Window manager)                     	         |
 | [Ripgrep][] (Fuzzy finder)			         |
-| [Neovim][] (Text editor)				 |
-| [Alacritty][] (Terminal emulator)           	         |
+| Visual Studio Code with Vim keybindings                |
+| [Alacritty][] or Gnome Terminal (Terminal emulator)    |
 | [Manjaro Arch][] ([GNOME][] as desktop environment)    |
 
 [i3]: https://i3wm.org/
-[Neovim]: https://github.com/neovim/neovim
 [Alacritty]: https://alacritty.org/
 [Manjaro Arch]: https://manjaro.org/
 [GNOME]: https://www.gnome.org/
