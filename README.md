@@ -5,6 +5,7 @@
 | [i3][] (Window manager)                     	         |
 | [Ripgrep][] (Fuzzy finder)			         |
 | Visual Studio Code with Vim keybindings                |
+| [Neovim][]						 |
 | [Alacritty][] or Gnome Terminal (Terminal emulator)    |
 | [Manjaro Arch][] ([GNOME][] as desktop environment)    |
 
@@ -13,3 +14,4 @@
 [Manjaro Arch]: https://manjaro.org/
 [GNOME]: https://www.gnome.org/
 [Ripgrep]: https://github.com/BurntSushi/ripgrep
+[Neovim]: https://neovim.io/
