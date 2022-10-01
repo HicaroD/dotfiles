@@ -4,7 +4,7 @@
 |--------------------------------------------------------|
 | [Neovim][]						 |
 | Visual Studio Code with Vim keybindings                |
-| [Alacritty][] or Gnome Terminal (Terminal emulator)    |
+| [Alacritty][] (Terminal emulator)		         |
 | [Manjaro Arch][] ([GNOME][] as desktop environment)    |
 
 I use Neovim or Visual Studio Code depending on the language I'm working on. For languages, 
