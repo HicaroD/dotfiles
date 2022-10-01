@@ -31,7 +31,9 @@ Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
 Plug 'ervandew/supertab'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'preservim/nerdtree'
+Plug 'pangloss/vim-javascript'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Color scheme configuration
@@ -63,6 +65,6 @@ nmap <C-l> :tabnext<CR>
 " SuperTab configuration
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
-" NerdTree configuration
-nnoremap <C-p> :NERDTreeToggle<CR>
-let g:NERDTreeWinSize=20
+" Fzf configuration
+nnoremap <expr> <C-p> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
+
