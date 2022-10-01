@@ -2,8 +2,8 @@
 
 | Tools						         |
 |--------------------------------------------------------|
-| [Neovim][]						 |
-| Visual Studio Code with Vim keybindings                |
+| [Neovim][] (Main text editor)				 |
+| Visual Studio Code with Vim keybindings (Code editor)  |
 | [Alacritty][] (Terminal emulator)		         |
 | [Manjaro Arch][] ([GNOME][] as desktop environment)    |
 
