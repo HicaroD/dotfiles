@@ -23,10 +23,15 @@ set nojoinspaces
 set formatoptions=cloqr
 set cinoptions=l1
 
+" Installed plugins (Color scheme, autocompletion, tab completion, file
+" navigator)
 call plug#begin()
 Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
+Plug 'ervandew/supertab'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'preservim/nerdtree'
 call plug#end()
 
 " Color scheme configuration
@@ -47,7 +52,7 @@ inoremap ' ''<ESC>ha
 inoremap ` ``<ESC>ha
 inoremap [ []<ESC>ha
 
-" Tabs
+" Tabs configuration
 map <Leader>tn :tabnew<cr>
 map <Leader>tm :tabmove
 map <Leader>tc :tabclose<cr>
@@ -55,23 +60,9 @@ map <Leader>to :tabonly<cr>
 nmap <C-h> :tabprevious<CR>
 nmap <C-l> :tabnext<CR>
 
-" Grep config
-if executable("rg")
-    set grepprg=rg
-    set grepprg+=\ --color\ never\ --column\ --line-number\ --no-heading\ $*
-    set grepformat=%f:%l:%c:%m
-endif
-nnoremap <C-f> :Rg<Enter> 
-
-" FZF
-nnoremap <expr> <C-p> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
-
-" SuperTab
+" SuperTab configuration
 let g:SuperTabDefaultCompletionType = "<c-n>"
 
-" coc-snippets
-imap <A-l> <Plug>(coc-snippets-expand)
-
-" NerdTree
-nnoremap <C-t> :NERDTreeToggle<CR>
+" NerdTree configuration
+nnoremap <C-p> :NERDTreeToggle<CR>
 let g:NERDTreeWinSize=25
