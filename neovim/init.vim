@@ -65,4 +65,4 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " NerdTree configuration
 nnoremap <C-p> :NERDTreeToggle<CR>
-let g:NERDTreeWinSize=25
+let g:NERDTreeWinSize=20
