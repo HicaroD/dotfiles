@@ -26,7 +26,6 @@ set cinoptions=l1
 " Installed plugins (Color scheme, autocompletion, tab completion, file
 " navigator)
 call plug#begin()
-Plug 'kaicataldo/material.vim', { 'branch': 'main' }
 Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
 Plug 'ervandew/supertab'
@@ -34,14 +33,15 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'pangloss/vim-javascript'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'wojciechkepka/vim-github-dark'
+Plug 'preservim/nerdtree'
 call plug#end()
 
 " Color scheme configuration
 set termguicolors
-let g:material_terminal_italics = 0
-let g:material_theme_style = 'darker'
-let g:lightline = { 'colorscheme': 'material_vim' }
-colorscheme material
+let g:lightline = { 'colorscheme': 'ghdark' }
+let g:gh_color = "soft"
+colorscheme ghdark
 
 " Leader key
 let mapleader="'"
@@ -68,3 +68,6 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " Fzf configuration
 nnoremap <expr> <C-p> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
 
+" NERDTree
+nnoremap <C-o> :NERDTreeToggle<CR>
+let g:NERDTreeWinSize=20
