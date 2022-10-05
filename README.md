@@ -2,13 +2,14 @@
 
 | Tools						         |
 |--------------------------------------------------------|
-| [Neovim][] (Main text editor)				 |
+| [Neovim][] (Text editor)				 |
+| Sublime Text with Vim keybindings (Text editor)	 |
 | Visual Studio Code with Vim keybindings (Code editor)  |
 | [Alacritty][] (Terminal emulator)		         |
 | [Manjaro Arch][] ([GNOME][] as desktop environment)    |
 
-I use Neovim or Visual Studio Code depending on the language I'm working on. For languages, 
-such as Java or Dart (with Flutter), I use Visual Studio Code for better language support.
+I use VSCode for Java and Flutter/Dart. For the rest of the languages, I use NeoVim or 
+Sublime Text.
 
 [i3]: https://i3wm.org/
 [Alacritty]: https://alacritty.org/
