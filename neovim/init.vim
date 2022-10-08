@@ -23,14 +23,28 @@ set nojoinspaces
 set formatoptions=cloqr
 set cinoptions=l1
 
+" Leader key
+let mapleader = "'"
+
 " Installed plugins (Color scheme, autocompletion, tab completion, file
 " navigator)
 call plug#begin()
 Plug 'wojciechkepka/vim-github-dark'
+Plug 'ervandew/supertab'
+Plug 'itchyny/lightline.vim'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'pangloss/vim-javascript'
+
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
 
 " Color scheme configuration
 set termguicolors
+let g:lightline = { 'colorscheme': 'ghdark' }
+let g:gh_color = "soft"
 colorscheme ghdark
 
 " Pairs autocompletion configuration
@@ -48,3 +62,13 @@ map <Leader>tc :tabclose<cr>
 map <Leader>to :tabonly<cr>
 nmap <C-h> :tabprevious<CR>
 nmap <C-l> :tabnext<CR>
+
+" Telescope configuration
+nmap <C-p> :lua require('telescope.builtin').find_files()<cr>
+nmap <C-g> :lua require('telescope.builtin').live_grep()<cr>
+
+nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
+nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+
+nnoremap <leader>fd <cmd>lua require('telescope.builtin').lsp_definitions()<cr>
+nnoremap <leader>fi <cmd>lua require('telescope.builtin').lsp_implementations()<cr>
