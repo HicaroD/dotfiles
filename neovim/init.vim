@@ -72,3 +72,19 @@ nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
 
 nnoremap <leader>fd <cmd>lua require('telescope.builtin').lsp_definitions()<cr>
 nnoremap <leader>fi <cmd>lua require('telescope.builtin').lsp_implementations()<cr>
+
+lua << EOF
+require('telescope').setup{
+  defaults = {
+    -- ...
+  },
+  pickers = {
+    find_files = {
+      theme = "dropdown",
+    }
+  },
+  extensions = {
+    -- ...
+  }
+}
+EOF
