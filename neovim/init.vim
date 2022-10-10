@@ -78,7 +78,7 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
-let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
+let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 1.0 } }
 
 let g:fzf_action = {
   \ 'ctrl-t': ':$tabnew', }
