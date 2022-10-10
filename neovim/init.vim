@@ -28,9 +28,10 @@ set cinoptions=l1
 call plug#begin()
 Plug 'wojciechkepka/vim-github-dark'
 Plug 'itchyny/lightline.vim'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
+Plug 'nvim-tree/nvim-tree.lua'
 call plug#end()
 
 " Color scheme configuration
@@ -55,39 +56,58 @@ map <Leader>to :tabonly<cr>
 nmap <C-h> :tabprevious<CR>
 nmap <C-l> :tabnext<CR>
 
-" FZF configuration
-if v:progpath =~ "git" " If I'm on a git repository
-    nmap <C-p> :GFiles<CR>
-else
-    nmap <C-p> :Files<CR>
-endif
-nmap <C-g> :Rg<CR>
+" Nvim-Tree
+lua << EOF
 
-let g:fzf_colors =
-\ { 'fg':      ['fg', 'Normal'],
-  \ 'bg':      ['bg', 'Normal'],
-  \ 'hl':      ['fg', 'Comment'],
-  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
-  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
-  \ 'hl+':     ['fg', 'Statement'],
-  \ 'info':    ['fg', 'PreProc'],
-  \ 'border':  ['fg', 'Ignore'],
-  \ 'prompt':  ['fg', 'Conditional'],
-  \ 'pointer': ['fg', 'Exception'],
-  \ 'marker':  ['fg', 'Keyword'],
-  \ 'spinner': ['fg', 'Label'],
-  \ 'header':  ['fg', 'Comment'] }
+-- disable netrw at the very start of your init.lua (strongly advised)
+vim.g.loaded = 1
+vim.g.loaded_netrwPlugin = 1
+require("nvim-tree").setup {
+  diagnostics = {
+    enable = true,
+    show_on_dirs = true,
+    debounce_delay = 50,
+    icons = {
+    hint = "",
+	info = "",
+        warning = "",
+        error = "",
+    },
+  },
+  view = {
+    width=25,
+  },
+  git = {
+    enable = true,
+    ignore = true,
+    show_on_dirs = true,
+    timeout = 400,
+  },
+}
+EOF
+nmap <C-p> :NvimTreeToggle<CR>
 
-let g:fzf_layout = { 'window': { 'width': 1.0, 'height': 1.0 } }
-
-let g:fzf_action = {
-  \ 'ctrl-t': ':$tabnew', }
-
-" COC
+" COC configuration
 " <tab> for triggering COC completion
 inoremap <silent><expr> <TAB>
-  \ pumvisible() ? "\<C-n>" :
-  \ <SID>check_back_space() ? "\<TAB>" :
-  \ coc#refresh()
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
-inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
+" Make <CR> to accept selected completion item or notify coc.nvim to format
+" <C-g>u breaks current undo, please make your own choice.
+inoremap <silent><expr> <CR> coc#pum#visible() ? coc#pum#confirm()
+                              \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+" Use <c-space> to trigger completion.
+if has('nvim')
+  inoremap <silent><expr> <c-space> coc#refresh()
+else
+  inoremap <silent><expr> <c-@> coc#refresh()
+endif
