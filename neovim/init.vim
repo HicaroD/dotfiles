@@ -30,15 +30,10 @@ let mapleader = "'"
 " navigator)
 call plug#begin()
 Plug 'wojciechkepka/vim-github-dark'
-Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
-
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
-Plug 'pangloss/vim-javascript'
-
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 call plug#end()
 
 " Color scheme configuration
@@ -63,28 +58,30 @@ map <Leader>to :tabonly<cr>
 nmap <C-h> :tabprevious<CR>
 nmap <C-l> :tabnext<CR>
 
-" Telescope configuration
-nmap <C-p> :lua require('telescope.builtin').find_files()<cr>
-nmap <C-g> :lua require('telescope.builtin').live_grep()<cr>
+" FZF configuration
+if v:progpath =~ "git" " If I'm on a git repository
+    nmap <C-p> :GFiles<CR>
+else
+    nmap <C-p> :Files<CR>
+endif
+nmap <C-g> :Rg<CR>
 
-nnoremap <leader>fb <cmd>lua require('telescope.builtin').buffers()<cr>
-nnoremap <leader>fh <cmd>lua require('telescope.builtin').help_tags()<cr>
+let g:fzf_colors =
+\ { 'fg':      ['fg', 'Normal'],
+  \ 'bg':      ['bg', 'Normal'],
+  \ 'hl':      ['fg', 'Comment'],
+  \ 'fg+':     ['fg', 'CursorLine', 'CursorColumn', 'Normal'],
+  \ 'bg+':     ['bg', 'CursorLine', 'CursorColumn'],
+  \ 'hl+':     ['fg', 'Statement'],
+  \ 'info':    ['fg', 'PreProc'],
+  \ 'border':  ['fg', 'Ignore'],
+  \ 'prompt':  ['fg', 'Conditional'],
+  \ 'pointer': ['fg', 'Exception'],
+  \ 'marker':  ['fg', 'Keyword'],
+  \ 'spinner': ['fg', 'Label'],
+  \ 'header':  ['fg', 'Comment'] }
 
-nnoremap <leader>fd <cmd>lua require('telescope.builtin').lsp_definitions()<cr>
-nnoremap <leader>fi <cmd>lua require('telescope.builtin').lsp_implementations()<cr>
+let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
 
-lua << EOF
-require('telescope').setup{
-  defaults = {
-    -- ...
-  },
-  pickers = {
-    find_files = {
-      theme = "dropdown",
-    }
-  },
-  extensions = {
-    -- ...
-  }
-}
-EOF
+let g:fzf_action = {
+  \ 'ctrl-t': ':$tabnew', }
