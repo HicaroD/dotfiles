@@ -6,7 +6,7 @@
                           \____ |\____/|__|  |__|  |__|____/\___  >____  >
                                \/                               \/     \/
 
-                       This repository contains personal dotfiles of Icarus.
+                         This repository contains personal dotfiles of Icarus.
 ```
 
 # dotfiles
