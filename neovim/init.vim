@@ -23,9 +23,6 @@ set nojoinspaces
 set formatoptions=cloqr
 set cinoptions=l1
 
-" Leader key
-let mapleader = "'"
-
 " Installed plugins (Color scheme, autocompletion, tab completion, file
 " navigator)
 call plug#begin()
