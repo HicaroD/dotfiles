@@ -85,3 +85,17 @@ let g:fzf_layout = { 'window': { 'width': 0.9, 'height': 0.9 } }
 
 let g:fzf_action = {
   \ 'ctrl-t': ':$tabnew', }
+
+" COC
+" <tab> for triggering COC completion
+function! CheckBackSpace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~ '\s'
+endfunction
+
+inoremap <silent><expr> <TAB>
+      \ coc#pum#visible() ? coc#pum#next(1):
+      \ CheckBackSpace() ? "\<Tab>" :
+      \ coc#refresh()
+
+inoremap <expr> <leader> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
