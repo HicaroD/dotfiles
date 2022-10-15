@@ -14,7 +14,7 @@ set noswapfile
 " Tabs and whitepaces
 set sw=4 et
 set softtabstop=-1
-set tabstop=8
+set tabstop=8 
 set noexpandtab
 set ts=8
 set nosmartindent
@@ -30,15 +30,18 @@ Plug 'wojciechkepka/vim-github-dark'
 Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'nvim-tree/nvim-web-devicons' " optional, for file icons
+Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
+
+Plug 'octol/vim-cpp-enhanced-highlight' " Syntax for C/C++
 call plug#end()
 
 " Color scheme configuration
 set termguicolors
-let g:lightline = { 'colorscheme': 'ghdark' }
-let g:gh_color = "soft"
-colorscheme ghdark
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+colorscheme vscode
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
@@ -58,8 +61,6 @@ nmap <C-l> :tabnext<CR>
 
 " Nvim-Tree
 lua << EOF
-
--- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
 require("nvim-tree").setup {
@@ -111,3 +112,7 @@ if has('nvim')
 else
   inoremap <silent><expr> <c-@> coc#refresh()
 endif
+
+" C / C++ syntax
+let g:cpp_concepts_highlight = 1
+let g:cpp_class_decl_highlight = 1
