@@ -26,14 +26,10 @@ set cinoptions=l1
 " Installed plugins (Color scheme, autocompletion, tab completion, file
 " navigator)
 call plug#begin()
-Plug 'wojciechkepka/vim-github-dark'
 Plug 'itchyny/lightline.vim'
-
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
-
 Plug 'octol/vim-cpp-enhanced-highlight' " Syntax for C/C++
 call plug#end()
 
