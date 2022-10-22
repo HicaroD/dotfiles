@@ -28,6 +28,7 @@ set cinoptions=l1
 call plug#begin()
 Plug 'wojciechkepka/vim-github-dark'
 Plug 'itchyny/lightline.vim'
+
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 Plug 'nvim-tree/nvim-web-devicons'
@@ -119,3 +120,36 @@ endif
 " C / C++ syntax
 let g:cpp_concepts_highlight = 1
 let g:cpp_class_decl_highlight = 1
+
+" Easy line swapping
+" Credits: https://stackoverflow.com/a/741819
+
+function! s:swap_lines(n1, n2)
+    let line1 = getline(a:n1)
+    let line2 = getline(a:n2)
+    call setline(a:n1, line2)
+    call setline(a:n2, line1)
+endfunction
+
+function! s:swap_up()
+    let n = line('.')
+    if n == 1
+        return
+    endif
+
+    call s:swap_lines(n, n - 1)
+    exec n - 1
+endfunction
+
+function! s:swap_down()
+    let n = line('.')
+    if n == line('$')
+        return
+    endif
+
+    call s:swap_lines(n, n + 1)
+    exec n + 1
+endfunction
+
+noremap <silent> <c-s-up> :call <SID>swap_up()<CR>
+noremap <silent> <c-s-down> :call <SID>swap_down()<CR>
