@@ -125,7 +125,8 @@ alias vi="nvim"
 alias builder="cd ~ && ./builder && cd -"
 
 # Flutter
-export PATH=$PATH:~/flutter/bin
+export PATH="$PATH:~/flutter/"
+export PATH=/home/hicaro/flutter/bin:$PATH
 
 alias studio="cd /opt/android-studio/bin/ && ./studio.sh && cd -"
 
@@ -137,3 +138,5 @@ export JAVA_HOME=/usr/lib/jvm/java-18-openjdk
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 
 export PATH=$PATH:/opt/discord
+export PATH="$PATH:/home/hicaro/Android/Sdk"
+
