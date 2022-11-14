@@ -23,12 +23,21 @@ set nojoinspaces
 set formatoptions=cloqr
 set cinoptions=l1
 
-" Installed plugins (Color scheme, autocompletion, tab completion, file
-" navigator)
+" Installed plugins (autocompletion, file navigator and more)
 call plug#begin()
-Plug 'mhinz/vim-startify'
+" Status bar
 Plug 'itchyny/lightline.vim'
+
+" LSP / Autocompletion / Snippets
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Tree view
+Plug 'nvim-tree/nvim-tree.lua'
+Plug 'nvim-tree/nvim-web-devicons'
+
+" Fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 call plug#end()
 
 " Color scheme configuration
@@ -98,3 +107,53 @@ function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
+" Tabs navigation configuration
+" 
+inoremap [ []<ESC>ha
+
+
+" Tabs configuration
+map <Leader>tn :tabnew<cr>
+map <Leader>tm :tabmove
+map <Leader>tc :tabclose<cr>
+map <Leader>to :tabonly<cr>
+nmap <C-h> :tabprevious<CR>
+nmap <C-l> :tabnext<CR>
+
+" Nvim-tree configuration
+" 
+" Nvim-Tree
+lua << EOF
+vim.g.loaded = 1
+vim.g.loaded_netrwPlugin = 1
+require("nvim-tree").setup {
+  diagnostics = {
+    enable = true,
+    show_on_dirs = true,
+    debounce_delay = 50,
+    icons = {
+    hint = "",
+	info = "",
+        warning = "",
+        error = "",
+    },
+  },
+  view = {
+    width=20,
+  },
+  git = {
+    enable = true,
+    ignore = true,
+    show_on_dirs = true,
+    timeout = 400,
+  },
+}
+EOF
+nmap <C-p> :NvimTreeToggle<CR>
+
+" FZF (Fuzzy finder)
+" Credits: https://rietta.com/blog/hide-gitignored-files-fzf-vim/
+nnoremap <expr> <C-f> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
+
+let g:fzf_preview_window = ['right,50%', 'ctrl-/']
