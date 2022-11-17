@@ -140,3 +140,5 @@ export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
 export PATH=$PATH:/opt/discord
 export PATH="$PATH:/home/hicaro/Android/Sdk"
 
+# Dart
+export PATH="$PATH":"$HOME/.pub-cache/bin"
