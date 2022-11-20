@@ -14,15 +14,10 @@
 | Tools										|
 |-------------------------------------------------------------------------------|
 | [Neovim][] (Main code editor)				 			|
-| Visual Studio Code with Vim keybindings (Secondary code editor)  		|
 | [Alacritty][] (Terminal emulator)		         			|
-| Arch Linux ([Manjaro Arch][] with [GNOME][] as desktop environment)           |
+| Ubuntu 22.04 LTS						                |
 
-I mainly use Neovim as my main code editor, but, when I'm writing Flutter/Dart or Java 
-code, I use Visual Studio Code.
+I mainly use Neovim as my main code editor, but, when I'm working with Flutter/Dart or Java, I use Visual Studio Code.
 
 [Alacritty]: https://alacritty.org/
-[Manjaro Arch]: https://manjaro.org/
-[GNOME]: https://www.gnome.org/
-[Ripgrep]: https://github.com/BurntSushi/ripgrep
 [Neovim]: https://neovim.io/

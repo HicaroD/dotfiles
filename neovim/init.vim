@@ -25,6 +25,9 @@ set cinoptions=l1
 
 " Installed plugins (autocompletion, file navigator and more)
 call plug#begin()
+" Color scheme
+Plug 'tomasiser/vim-code-dark'
+
 " Status bar
 Plug 'itchyny/lightline.vim'
 
@@ -42,7 +45,7 @@ call plug#end()
 
 " Color scheme configuration
 set termguicolors
-colorscheme vscode
+colorscheme codedark
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
