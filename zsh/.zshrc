@@ -132,3 +132,6 @@ export PATH="$PATH:/home/hicaro/Android/Sdk"
 
 # Dart
 export PATH="$PATH":"$HOME/.pub-cache/bin"
+
+# Node, NPM
+export PATH="$PATH:~/Documentos/node-v18.12.1-linux-x64/bin"

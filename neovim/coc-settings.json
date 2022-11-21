@@ -6,5 +6,6 @@
     "coc.preferences.jumpCommand": "tabe",
     "suggest.noselect": true,
     "rust-analyzer.server.extraEnv": { "RUSTUP_TOOLCHAIN": "stable" },
-    "flutter.provider.enableSnippet": true
+    "flutter.provider.enableSnippet": true,
+    "jedi.executable.command": "jedi-language-server"
 }
