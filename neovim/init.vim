@@ -35,8 +35,8 @@ Plug 'itchyny/lightline.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Tree view
-Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
+Plug 'nvim-tree/nvim-tree.lua'
 
 " Fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -127,7 +127,7 @@ nmap <C-l> :tabnext<CR>
 lua << EOF
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
-require("nvim-tree").setup {
+require("nvim-tree").setup({
   diagnostics = {
     enable = true,
     show_on_dirs = true,
@@ -148,9 +148,8 @@ require("nvim-tree").setup {
     show_on_dirs = true,
     timeout = 400,
   },
-}
+})
 EOF
-
 nmap <C-p> :NvimTreeToggle<CR>
 
 " FZF (Fuzzy finder)
