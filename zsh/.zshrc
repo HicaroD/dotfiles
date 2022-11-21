@@ -100,10 +100,9 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias notes="nvim ~/Documentos/Notes"
-alias proj="cd ~/Documentos/Projects"
-alias vimrc="nvim ~/.config/nvim/init.vim"
+alias proj="cd ~/Documentos/Projetos"
+alias vimrc="nvim ~/Documentos/dotfiles/neovim/init.vim"
 alias ideas="nvim ~/Documentos/ideas.txt"
-alias aulas="cd ~/Documentos/Projects/Aulas"
 alias proto="cd ~/Documentos/Prototypes"
 
 # Golang
@@ -115,24 +114,15 @@ alias mesaconfig="cd ~ && ./mesaconfig"
 # Anki
 alias words="nvim ~/anki.txt"
 
-# Monitors
-alias screencfg="cd ~ && ./screen && cd -"
-
 # Neovim
 alias vi="nvim"
 
-# Project builder
-alias builder="cd ~ && ./builder && cd -"
-
 # Flutter
-export PATH="$PATH:~/flutter/"
 export PATH=/home/hicaro/flutter/bin:$PATH
-
-alias studio="cd /opt/android-studio/bin/ && ./studio.sh && cd -"
 
 # Java
 export PATH="$PATH:/usr/bin/java"
-export JAVA_HOME=/usr/lib/jvm/java-18-openjdk
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 
 # Google Chrome
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable

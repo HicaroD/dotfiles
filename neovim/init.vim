@@ -94,6 +94,8 @@ let g:lightline = {
 \     }
 
 " Coc configuration
+let g:coc_node_path = "/home/hicaro/Documentos/node-v18.12.1-linux-x64/bin/node"
+
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
@@ -111,11 +113,6 @@ function! CheckBackspace() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Tabs navigation configuration
-" 
-inoremap [ []<ESC>ha
-
-
 " Tabs configuration
 map <Leader>tn :tabnew<cr>
 map <Leader>tm :tabmove
@@ -125,7 +122,7 @@ nmap <C-h> :tabprevious<CR>
 nmap <C-l> :tabnext<CR>
 
 " Nvim-tree configuration
-" 
+
 " Nvim-Tree
 lua << EOF
 vim.g.loaded = 1
@@ -153,6 +150,7 @@ require("nvim-tree").setup {
   },
 }
 EOF
+
 nmap <C-p> :NvimTreeToggle<CR>
 
 " FZF (Fuzzy finder)
