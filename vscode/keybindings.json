@@ -5,7 +5,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+a",
+        "key": "ctrl+shift+q",
         "command": "workbench.action.toggleActivityBarVisibility",
     },
     {
