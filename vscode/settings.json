@@ -16,7 +16,7 @@
     "git.enabled": false,
     "editor.minimap.enabled": false,
     "zenMode.hideActivityBar": false,
-    "workbench.activityBar.visible": false,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
+    "workbench.activityBar.visible": false,
 }
