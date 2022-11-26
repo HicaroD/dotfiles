@@ -1,0 +1,13 @@
+// Place your key bindings in this file to override the defaults
+[
+{
+    "key": "ctrl+e",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus"
+},
+{
+    "key": "ctrl+a",
+    "command": "workbench.action.toggleActivityBarVisibility",
+}
+
+]
