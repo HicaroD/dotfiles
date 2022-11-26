@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "Fantasque Sans Mono",
-    "editor.fontSize": 20,
+    "editor.fontSize": 21,
     "[dart]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
@@ -17,4 +17,6 @@
     "editor.minimap.enabled": false,
     "zenMode.hideActivityBar": false,
     "workbench.activityBar.visible": false,
+    "workbench.editor.enablePreview": false,
+    "workbench.editor.enablePreviewFromQuickOpen": false,
 }
