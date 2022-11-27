@@ -41,6 +41,9 @@ Plug 'nvim-tree/nvim-tree.lua'
 " Fuzzy finder
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+" Tree sitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
 " Color scheme configuration
@@ -157,3 +160,15 @@ nmap <C-p> :NvimTreeToggle<CR>
 nnoremap <expr> <C-f> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
 
 let g:fzf_preview_window = ['right,50%', 'ctrl-/']
+
+" Tree-sitter configuration
+lua << EOF
+require'nvim-treesitter.configs'.setup {
+  ensure_installed = { "c", "rust", "python", "go" },
+  sync_install = false,
+  auto_install = true,
+  highlight = {
+    enable = true,
+  },
+}
+EOF
