@@ -164,7 +164,7 @@ let g:fzf_preview_window = ['right,50%', 'ctrl-/']
 " Tree-sitter configuration
 lua << EOF
 require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "rust", "python", "go" },
+  ensure_installed = { "c", "rust", "python", "go", "dart" },
   sync_install = false,
   auto_install = true,
   highlight = {
