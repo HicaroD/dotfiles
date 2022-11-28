@@ -20,4 +20,5 @@
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "material-icon-theme",
     "files.autoSave": "afterDelay",
+    "workbench.activityBar.visible": false,
 }
