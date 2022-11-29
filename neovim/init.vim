@@ -39,8 +39,8 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'nvim-tree/nvim-tree.lua'
 
 " Fuzzy finder
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 " Tree sitter
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
@@ -155,11 +155,19 @@ require("nvim-tree").setup({
 EOF
 nmap <C-p> :NvimTreeToggle<CR>
 
-" FZF (Fuzzy finder)
-" Credits: https://rietta.com/blog/hide-gitignored-files-fzf-vim/
-nnoremap <expr> <C-f> (len(system('git rev-parse')) ? ':Files' : ':GFiles --exclude-standard --others --cached')."\<cr>"
-
-let g:fzf_preview_window = ['right,50%', 'ctrl-/']
+" Telescope
+lua << EOF
+require('telescope').setup{
+  defaults = {
+    layout_config = {
+      horizontal = {
+        preview_cutoff = 0,
+      },
+    },
+  }
+}
+EOF
+nmap <C-f> :lua require('telescope.builtin').git_files()<CR>
 
 " Tree-sitter configuration
 lua << EOF
