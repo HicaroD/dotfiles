@@ -166,9 +166,10 @@ lua << EOF
 require'nvim-treesitter.configs'.setup {
   ensure_installed = { "c", "rust", "python", "go", "dart" },
   sync_install = false,
-  auto_install = true,
   highlight = {
     enable = true,
+    disable = { "markdown", "vim" },
+    additional_vim_regex_highlighting = false,
   },
 }
 EOF
