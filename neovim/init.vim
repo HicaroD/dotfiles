@@ -119,6 +119,13 @@ let g:lightline.component_type = {
 \   'coc_fix'          : 'middle',
 \ }
 
+  let g:lightline.separator = {
+      \   'left': '', 'right': ''
+  \}
+  let g:lightline.subseparator = {
+      \   'left': '', 'right': ''
+  \}
+
 function! s:lightline_coc_diagnostic(kind, sign) abort
   let info = get(b:, 'coc_diagnostic_info', 0)
   if empty(info) || get(info, a:kind, 0) == 0
