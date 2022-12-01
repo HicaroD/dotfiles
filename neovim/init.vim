@@ -109,6 +109,9 @@ let g:lightline = {
 	\   'coc_hint'         : 'LightlineCocHints',
 	\   'coc_fix'          : 'LightlineCocFixes',
 	\ },
+	\ 'component_function': {
+	\   'filename': 'LightlineFilename',
+	\ },
 \}
 
 let g:lightline.component_type = {
@@ -119,12 +122,16 @@ let g:lightline.component_type = {
 \   'coc_fix'          : 'middle',
 \ }
 
-  let g:lightline.separator = {
-      \   'left': '', 'right': ''
-  \}
-  let g:lightline.subseparator = {
-      \   'left': '', 'right': ''
-  \}
+let g:lightline.separator = {
+  \   'left': '', 'right': ''
+\}
+let g:lightline.subseparator = {
+  \   'left': '', 'right': ''
+\}
+
+function! LightlineFilename()
+return expand('%:t') !=# '' ? @% : '[No Name]'
+endfunction
 
 function! s:lightline_coc_diagnostic(kind, sign) abort
   let info = get(b:, 'coc_diagnostic_info', 0)
