@@ -102,8 +102,9 @@ source $ZSH/oh-my-zsh.sh
 alias notes="nvim ~/Documentos/Notes"
 alias proj="cd ~/Documentos/Projetos"
 alias vimrc="nvim ~/Documentos/dotfiles/neovim/init.vim"
-alias ideas="nvim ~/Documentos/ideas.txt"
+alias ideas="nvim ~/Documentos/Notes/ideas.txt"
 alias proto="cd ~/Documentos/Prototypes"
+alias zshrc="nvim ~/.zshrc"
 
 # Golang
 export PATH=$PATH:/usr/local/go/bin
