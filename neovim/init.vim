@@ -26,7 +26,7 @@ set cinoptions=l1
 " Installed plugins (autocompletion, file navigator and more)
 call plug#begin()
 " Color scheme
-Plug 'tomasiser/vim-code-dark'
+Plug 'lifepillar/vim-gruvbox8'
 
 " Status bar
 Plug 'itchyny/lightline.vim'
@@ -48,7 +48,8 @@ call plug#end()
 
 " Color scheme configuration
 set termguicolors
-colorscheme codedark
+let g:gruvbox_italics = 0
+colorscheme gruvbox8
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
@@ -93,7 +94,7 @@ noremap <silent> <c-s-down> :call <SID>swap_down()<CR>
 
 " Lightline configuration
 let g:lightline = {
-\     'colorscheme': 'wombat',
+\     'colorscheme': 'gruvbox8',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'readonly', 'filename', 'modified', 'coc_error', 'coc_warning', 'coc_hint', 'coc_info' ] ],
