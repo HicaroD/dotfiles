@@ -244,3 +244,47 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 EOF
+
+" Automatically comment
+" Credits: https://stackoverflow.com/a/24046914 
+let s:comment_map = { 
+    \   "c": '\/\/',
+    \   "cpp": '\/\/',
+    \   "go": '\/\/',
+    \   "java": '\/\/',
+    \   "javascript": '\/\/',
+    \   "lua": '--',
+    \   "scala": '\/\/',
+    \   "python": '#',
+    \   "rust": '\/\/',
+    \   "sh": '#',
+    \   "conf": '#',
+    \   "profile": '#',
+    \   "bashrc": '#',
+    \   "bash_profile": '#',
+    \   "bat": 'REM',
+    \   "vim": '"',
+    \ }
+
+function! ToggleComment()
+    if has_key(s:comment_map, &filetype)
+        let comment_leader = s:comment_map[&filetype]
+        if getline('.') =~ "^\\s*" . comment_leader . " " 
+            " Uncomment the line
+            execute "silent s/^\\(\\s*\\)" . comment_leader . " /\\1/"
+        else 
+            if getline('.') =~ "^\\s*" . comment_leader
+                " Uncomment the line
+                execute "silent s/^\\(\\s*\\)" . comment_leader . "/\\1/"
+            else
+                " Comment the line
+                execute "silent s/^\\(\\s*\\)/\\1" . comment_leader . " /"
+            end
+        end
+    else
+        echo "No comment leader found for filetype"
+    end
+endfunction
+
+nnoremap <silent> <C-c> :call ToggleComment()<cr>
+vnoremap <silent> <C-c> :call ToggleComment()<cr>
