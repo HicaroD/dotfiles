@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "Fantasque Sans Mono",
-    "editor.fontSize": 21,
+    "editor.fontSize": 23,
     "editor.rulers": [],
     "[dart]": {
         "editor.formatOnSave": true,
