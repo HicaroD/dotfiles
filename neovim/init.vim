@@ -26,7 +26,7 @@ set cinoptions=l1
 " Installed plugins (autocompletion, file navigator and more)
 call plug#begin()
 " Color scheme
-Plug 'lifepillar/vim-gruvbox8'
+Plug 'tomasiser/vim-code-dark'
 
 " Status bar
 Plug 'itchyny/lightline.vim'
@@ -48,8 +48,7 @@ call plug#end()
 
 " Color scheme configuration
 set termguicolors
-let g:gruvbox_italics = 0
-colorscheme gruvbox8
+colorscheme codedark
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
@@ -94,7 +93,7 @@ noremap <silent> <c-s-down> :call <SID>swap_down()<CR>
 
 " Lightline configuration
 let g:lightline = {
-\     'colorscheme': 'gruvbox8',
+\     'colorscheme': 'wombat',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'readonly', 'filename', 'modified', 'coc_error', 'coc_warning', 'coc_hint', 'coc_info' ] ],
@@ -231,6 +230,7 @@ require('telescope').setup{
 }
 EOF
 nmap <C-f> :lua require('telescope.builtin').git_files()<CR>
+nmap <C-b> :lua require('telescope.builtin').git_branches()<CR>
 
 " Tree-sitter configuration
 lua << EOF
