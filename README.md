@@ -11,6 +11,15 @@
 
 # dotfiles
 
+## Summary
+
+1. [Tools](#tools)
+2. [Configuration](#tools)
+    2.1. [My Neovim keybindings](#my-neovim-keybindings)
+
+
+### Tools
+
 | Tools										|
 |-------------------------------------------------------------------------------|
 | [Neovim][] (Main code editor)				 			|
@@ -22,7 +31,7 @@ I mainly use Neovim as my main code editor, but, when I'm working with Flutter/D
 
 [Neovim]: https://neovim.io/
 
-## Configuration
+### Configuration
 
-### My Neovim keybindings
+#### My Neovim keybindings
 TODO.
