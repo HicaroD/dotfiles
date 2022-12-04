@@ -25,7 +25,7 @@ set cinoptions=l1
 " Installed plugins (autocompletion, file navigator and more)
 call plug#begin()
 " Color scheme
-Plug 'tomasiser/vim-code-dark'
+Plug 'kvrohit/rasmus.nvim'
 
 " Status bar
 Plug 'itchyny/lightline.vim'
@@ -47,7 +47,8 @@ call plug#end()
 
 " Color scheme configuration
 set termguicolors
-colorscheme codedark
+let g:rasmus_italic_comments = 0
+colorscheme rasmus
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
@@ -92,7 +93,7 @@ noremap <silent> <c-s-down> :call <SID>swap_down()<CR>
 
 " Lightline configuration
 let g:lightline = {
-\     'colorscheme': 'wombat',
+\     'colorscheme': 'nord',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'readonly', 'filename', 'modified', 'coc_error', 'coc_warning', 'coc_hint', 'coc_info' ] ],
