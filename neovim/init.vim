@@ -290,3 +290,17 @@ endfunction
 
 nnoremap <silent> <C-c> :call ToggleComment()<cr>
 vnoremap <silent> <C-c> :call ToggleComment()<cr>
+
+" errorformat configuration
+" Credits: https://github.com/rust-lang/rust.vim/blob/master/compiler/rustc.vim
+set errorformat=
+            \%-G,
+            \%-Gerror:\ aborting\ %.%#,
+            \%-Gerror:\ Could\ not\ compile\ %.%#,
+            \%Eerror:\ %m,
+            \%Eerror[E%n]:\ %m,
+            \%Wwarning:\ %m,
+            \%Inote:\ %m,
+            \%C\ %#-->\ %f:%l:%c,
+            \%E\ \ left:%m,%C\ right:%m\ %f:%l:%c,%Z
+
