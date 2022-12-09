@@ -47,8 +47,7 @@ call plug#end()
 
 " Color scheme configuration
 set termguicolors
-let g:gruvbox_italics = 0
-colorscheme gruvbox8_hard
+colorscheme vscode_hicaro
 
 " Pairs autocompletion configuration
 inoremap { {}<ESC>ha
@@ -93,7 +92,7 @@ noremap <silent> <c-s-down> :call <SID>swap_down()<CR>
 
 " Lightline configuration
 let g:lightline = {
-\     'colorscheme': 'gruvbox8',
+\     'colorscheme': 'wombat',
 	\ 'active': {
 	\   'left': [ [ 'mode', 'paste' ],
 	\             [ 'readonly', 'filename', 'modified', 'coc_error', 'coc_warning', 'coc_hint', 'coc_info' ] ],
