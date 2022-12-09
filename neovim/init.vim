@@ -141,19 +141,19 @@ function! s:lightline_coc_diagnostic(kind, sign) abort
 endfunction
 
 function! LightlineCocErrors() abort
-  return s:lightline_coc_diagnostic('error', 'E')
+  return s:lightline_coc_diagnostic('error', '')
 endfunction
 
 function! LightlineCocWarnings() abort
-  return s:lightline_coc_diagnostic('warning', 'W')
+  return s:lightline_coc_diagnostic('warning', '')
 endfunction
 
 function! LightlineCocInfos() abort
-  return s:lightline_coc_diagnostic('information', 'I')
+  return s:lightline_coc_diagnostic('information', '')
 endfunction
 
 function! LightlineCocHints() abort
-  return s:lightline_coc_diagnostic('hints', 'H')
+  return s:lightline_coc_diagnostic('hints', '')
 endfunction
 
 autocmd User CocDiagnosticChange call lightline#update()
@@ -166,6 +166,8 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> ]e <Plug>(coc-diagnostic-prev)
 nmap <silent> [e <Plug>(coc-diagnostic-next)
+nmap <silent> [e <Plug>(coc-diagnostic-next)
+nmap <C-e> :CocList diagnostics<CR>
 
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#pum#next(1) :
@@ -189,8 +191,6 @@ nmap <C-h> :tabprevious<CR>
 nmap <C-l> :tabnext<CR>
 
 " Nvim-tree configuration
-
-" Nvim-Tree
 lua << EOF
 vim.g.loaded = 1
 vim.g.loaded_netrwPlugin = 1
