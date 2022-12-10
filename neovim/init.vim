@@ -179,7 +179,6 @@ function! CheckBackspace() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-nnoremap <silent> <C-q> :CocList diagnostics<cr>
 
 " Tabs configuration
 map <Leader>tn :tabnew<cr>
@@ -199,14 +198,14 @@ require("nvim-tree").setup({
     show_on_dirs = true,
     debounce_delay = 50,
     icons = {
-    hint = "",
+        hint = "",
 	info = "",
         warning = "",
         error = "",
     },
   },
   view = {
-    width=20,
+    width=30,
   },
   git = {
     enable = true,
@@ -227,11 +226,13 @@ require('telescope').setup{
         preview_cutoff = 0,
       },
     },
-  }
+  },
 }
 EOF
+
 nmap <C-f> :lua require('telescope.builtin').git_files()<CR>
 nmap <C-b> :lua require('telescope.builtin').git_branches()<CR>
+nmap <C-x> :lua require('telescope.builtin').diagnostics()<CR>
 
 " Tree-sitter configuration
 lua << EOF
