@@ -19,8 +19,11 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "material-icon-theme",
-    "files.autoSave": "afterDelay",
-    "dart.debugExternalPackageLibraries": false,
-    "dart.debugSdkLibraries": false,
+    "vim.statusBarColorControl": false,
+    "vim.foldfix": false,
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1,
+        "asvetliakov.vscode-neovim": 1
+    },
     "workbench.activityBar.visible": false,
 }
