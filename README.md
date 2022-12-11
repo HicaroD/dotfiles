@@ -27,12 +27,4 @@
 
 I mainly use Neovim as my main code editor, but, when I'm working with Flutter/Dart or Java, I use Visual Studio Code.
 
-[Neovim]: https://neovim.io/
-
-### Configuration
-
-1. Neovim key bindings
-
-    | Key binding | Purpose |
-    |-------------|---------|
-    |             |         |
+[Neovim]: https://github.com/HicaroD/nvim-cfg-lua
