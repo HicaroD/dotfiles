@@ -11,11 +11,6 @@
 
 # dotfiles
 
-## Summary
-
-1. [Tools](#tools)
-2. [Configuration](#tools)
-
 ### Tools
 
 | Tools										                   |
