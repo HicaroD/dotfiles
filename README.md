@@ -21,8 +21,8 @@
 | Tools										                   |
 |--------------------------------------------|
 | [Neovim][] (Main code editor)				 			 |
-| Visual Studio Code (Secondary code editor) |
-| Gnome terminal (Terminal emulator)				 |
+| Visual Studio Code with Vim keybindings (Secondary code editor) |
+| Kitty (Terminal emulator)				 |
 | Ubuntu 22.04 LTS						               |
 
 I mainly use Neovim as my main code editor, but, when I'm working with Flutter/Dart or Java, I use Visual Studio Code.
