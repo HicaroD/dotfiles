@@ -5,8 +5,7 @@
     "[dart]": {
         "editor.formatOnSave": true,
         "editor.formatOnType": true,
-        "editor.rulers": [
-        ],
+        "editor.rulers": [],
         "editor.selectionHighlight": false,
         "editor.suggest.snippetsPreventQuickSuggestions": false,
         "editor.suggestSelection": "first",
@@ -16,14 +15,19 @@
     "git.enabled": false,
     "editor.minimap.enabled": false,
     "zenMode.hideActivityBar": false,
+    "zenMode.hideTabs": false,
+    "zenMode.restore": true,
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "material-icon-theme",
-    "vim.statusBarColorControl": false,
-    "vim.foldfix": false,
     "extensions.experimental.affinity": {
-        "vscodevim.vim": 1,
         "asvetliakov.vscode-neovim": 1
     },
+    "window.zoomLevel": -1,
+    "editor.bracketPairColorization.enabled": false,
+    "breadcrumbs.enabled": false,
+    "terminal.integrated.gpuAcceleration": "on",
+    "search.searchOnType": false,
+    "editor.codeLens": false,
     "workbench.activityBar.visible": false,
 }
