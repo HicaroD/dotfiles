@@ -99,7 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias notes="nvim ~/Documentos/Notes"
+alias notes="nvim ~/Documentos/Notes/"
+alias words="nvim ~/Documentos/Notes/words.md"
 alias proj="cd ~/Documentos/Projetos"
 alias vimrc="nvim ~/Documentos/dotfiles/neovim/init.vim"
 alias ideas="nvim ~/Documentos/Notes/ideas.txt"
@@ -111,9 +112,6 @@ export PATH=$PATH:/usr/local/go/bin
 
 # Mesa digitalizadora
 alias mesaconfig="cd ~ && ./mesaconfig"
-
-# Anki
-alias words="nvim ~/anki.txt"
 
 # Neovim
 alias vi="nvim"
@@ -136,3 +134,12 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Node, NPM
 export PATH="$PATH:~/Documentos/node-v18.12.1-linux-x64/bin"
+
+export PATH="$PATH:~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer"
+source /home/hicaro/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Clangd
+export PATH="$PATH:/home/hicaro/Documentos/clangd_15.0.6/bin/"
+
+# gopls
+export PATH="$PATH:/home/hicaro/go/bin/"
