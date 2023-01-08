@@ -13,7 +13,7 @@
 
 ### Tools
 
-| Tools										                   |
+| Tools										 |
 |--------------------------------------------|
 | [Neovim][] (Main code editor)				 			 |
 | Visual Studio Code with Vim keybindings (Secondary code editor) |
