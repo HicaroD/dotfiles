@@ -1,0 +1,5 @@
+{
+    "pyright.inlayHints.functionReturnTypes": false,
+    "pyright.inlayHints.variableTypes": false,
+    "clangd.fallbackFlags": [ "-std=c++20" ]
+}
