@@ -12,7 +12,14 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
     },
+
     "git.enabled": false,
+    "git.autofetch": false,
+    "git.autorefresh": false,
+    "git.confirmSync": false,
+    "github.gitAuthentication": false,
+    "git.terminalAuthentication": false,
+    
     "editor.minimap.enabled": false,
     "zenMode.hideActivityBar": false,
     "zenMode.hideTabs": false,
@@ -29,5 +36,6 @@
     "terminal.integrated.gpuAcceleration": "on",
     "search.searchOnType": false,
     "editor.codeLens": false,
+    "vscode-neovim.mouseSelectionStartVisualMode": true,
     "workbench.activityBar.visible": false,
 }
