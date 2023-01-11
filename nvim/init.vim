@@ -23,6 +23,8 @@ set nojoinspaces
 set formatoptions=cloqr
 set cinoptions=l1
 
+let g:mapleader = " "
+
 " Installed plugins (autocompletion, file navigator and more)
 call plug#begin()
 Plug 'tomasiser/vim-code-dark'
@@ -149,11 +151,20 @@ nmap <silent> gr <Plug>(coc-references)
 nmap <silent> [e <Plug>(coc-diagnostic-prev)
 nmap <silent> ]e <Plug>(coc-diagnostic-next)
 
+nmap <leader>d :CocList diagnostics<cr>
+
 inoremap <silent><expr> <TAB>
-      \ coc#pum#visible() ? coc#pum#next(1) :
-      \ CheckBackspace() ? "\<Tab>" :
+      \ coc#pum#visible() ? coc#_select_confirm() :
+      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
+      \ CheckBackspace() ? "\<TAB>" :
       \ coc#refresh()
-inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
+
+function! CheckBackspace() abort
+  let col = col('.') - 1
+  return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+let g:coc_snippet_next = '<tab>'
 
 function! CheckBackspace() abort
   let col = col('.') - 1
@@ -240,7 +251,7 @@ nvim_tree.setup {
 }
 
 EOF
-nmap <C-p> :NvimTreeToggle<CR>
+nmap <leader>p :NvimTreeToggle<CR>
 
 " Telescope
 "
@@ -252,10 +263,15 @@ require('telescope').setup{
         preview_cutoff = 0,
       },
     },
-  }
+  },
 }
 EOF
-nmap <C-f> :lua require('telescope.builtin').git_files()<CR>
+
+if v:progpath =~ "git"
+    nmap <leader>f :lua require('telescope.builtin').git_files()<CR>
+else
+    nmap <leader>f :lua require('telescope.builtin').find_files()<CR>
+endif
 
 " Tree-sitter configuration
 "
