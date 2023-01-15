@@ -22,4 +22,14 @@
         "command": "workbench.action.toggleSidebarVisibility",
         "when": "explorerViewletVisible"
     },
+    {
+        "key": "alt+.",
+        "command": "editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "-editor.action.quickFix",
+        "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
+    },
 ]

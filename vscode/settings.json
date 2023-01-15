@@ -17,7 +17,6 @@
     "git.autofetch": false,
     "git.autorefresh": false,
     "git.confirmSync": false,
-    "github.gitAuthentication": false,
     "git.terminalAuthentication": false,
     
     "editor.minimap.enabled": false,
@@ -27,14 +26,12 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "material-icon-theme",
-    "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
-    },
+
     "window.zoomLevel": -1,
     "editor.bracketPairColorization.enabled": false,
-    "breadcrumbs.enabled": false,
     "terminal.integrated.gpuAcceleration": "on",
     "search.searchOnType": false,
     "editor.codeLens": false,
+    "breadcrumbs.enabled": false,
     "workbench.activityBar.visible": false,
 }
