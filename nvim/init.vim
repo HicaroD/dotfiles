@@ -23,6 +23,10 @@ set nojoinspaces
 set formatoptions=cloqr
 set cinoptions=l1
 
+" Others
+set updatetime=300
+set signcolumn=yes
+
 let g:mapleader = " "
 
 " Installed plugins (autocompletion, file navigator and more)
@@ -152,6 +156,11 @@ nmap <silent> [e <Plug>(coc-diagnostic-prev)
 nmap <silent> ]e <Plug>(coc-diagnostic-next)
 
 nmap <leader>d :CocList diagnostics<cr>
+nmap <leader>rn <Plug>(coc-rename)
+
+nmap <C-i> <Plug>(coc-format)
+
+autocmd CursorHold * silent call CocActionAsync('highlight')
 
 inoremap <silent><expr> <TAB>
       \ coc#pum#visible() ? coc#_select_confirm() :
@@ -169,6 +178,16 @@ let g:coc_snippet_next = '<tab>'
 function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
+endfunction
+
+nnoremap <silent> K :call ShowDocumentation()<CR>
+
+function! ShowDocumentation()
+  if CocAction('hasProvider', 'hover')
+    call CocActionAsync('doHover')
+  else
+    call feedkeys('K', 'in')
+  endif
 endfunction
 
 " Tabs configuration
@@ -286,3 +305,4 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 EOF
+
