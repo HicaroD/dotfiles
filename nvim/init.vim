@@ -154,6 +154,7 @@ nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <silent> [e <Plug>(coc-diagnostic-prev)
 nmap <silent> ]e <Plug>(coc-diagnostic-next)
+nmap <leader>ca  <Plug>(coc-codeaction-cursor)
 
 nmap <leader>d :CocList diagnostics<cr>
 nmap <leader>rn <Plug>(coc-rename)
