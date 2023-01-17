@@ -183,6 +183,15 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
+  colors {
+    separator #AAAAAA
+    background #333333
+    statusline #AAAAAA
+    focused_workspace #282828 #282828 #FFFFFF #151718
+    active_workspace #DCCD69 #DCCD69 #151718 #ffffff
+    inactive_workspace #333333 #333333 #AAAAAA #AAAAAA
+    urgent_workspace #CE4045 #CE4045 #FFFFFF #ffffff
+  }
 }
 
 # Configuring monitors
@@ -194,3 +203,7 @@ workspace 5 output eDP-1
 
 # Background image setup
 exec --no-startup-id nitrogen --restore
+client.focused #000000 #000000 #FFFFFF #000000
+client.focused_inactive #333333 #333333 #FFFFFF #000000
+client.unfocused #333333 #333333 #FFFFFF #333333
+client.urgent #CE4045 #CE4045 #FFFFFF #DCCD69
