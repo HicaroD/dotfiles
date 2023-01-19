@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "Fantasque Sans Mono",
-    "editor.fontSize": 23,
+    "editor.fontSize": 20,
     "editor.rulers": [],
     "[dart]": {
         "editor.formatOnSave": true,
@@ -26,12 +26,14 @@
     "workbench.editor.enablePreview": false,
     "workbench.editor.enablePreviewFromQuickOpen": false,
     "workbench.iconTheme": "material-icon-theme",
-
-    "window.zoomLevel": -1,
     "editor.bracketPairColorization.enabled": false,
     "terminal.integrated.gpuAcceleration": "on",
     "search.searchOnType": false,
     "editor.codeLens": false,
     "breadcrumbs.enabled": false,
     "workbench.activityBar.visible": false,
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
 }
