@@ -33,12 +33,6 @@ let g:mapleader = " "
 call plug#begin()
 Plug 'tomasiser/vim-code-dark'
 Plug 'itchyny/lightline.vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'nvim-tree/nvim-web-devicons'
-Plug 'nvim-tree/nvim-tree.lua'
-Plug 'nvim-lua/plenary.nvim'
-Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
-Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 call plug#end()
 
 " Color scheme configuration
@@ -89,107 +83,14 @@ noremap <silent> <c-s-down> :call <SID>swap_down()<CR>
 " Lightline configuration
 let g:lightline = {
 \     'colorscheme': 'wombat',
-	\ 'active': {
-	\   'left': [ [ 'mode', 'paste' ],
-	\             [ 'readonly', 'filename', 'modified', 'coc_error', 'coc_warning', 'coc_hint', 'coc_info' ] ],
-	\   'right': [ [ 'lineinfo',  ],
-	\              [ 'percent' ],
-	\              [ 'fileformat', 'fileencoding', 'filetype'] ]
-	\ },
-	\ 'component_expand': {
-	\   'coc_error'        : 'LightlineCocErrors',
-	\   'coc_warning'      : 'LightlineCocWarnings',
-	\   'coc_info'         : 'LightlineCocInfos',
-	\   'coc_hint'         : 'LightlineCocHints',
-	\   'coc_fix'          : 'LightlineCocFixes',
-	\ },
 \}
 
-let g:lightline.component_type = {
-\   'coc_error'        : 'error',
-\   'coc_warning'      : 'warning',
-\   'coc_info'         : 'tabsel',
-\   'coc_hint'         : 'middle',
-\   'coc_fix'          : 'middle',
-\ }
-
-  let g:lightline.separator = {
-      \   'left': '', 'right': ''
-  \}
-  let g:lightline.subseparator = {
-      \   'left': '', 'right': ''
-  \}
-
-function! s:lightline_coc_diagnostic(kind, sign) abort
-  let info = get(b:, 'coc_diagnostic_info', 0)
-  if empty(info) || get(info, a:kind, 0) == 0
-    return ''
-  endif
-  return printf('%s %d', a:sign, info[a:kind])
-endfunction
-
-function! LightlineCocErrors() abort
-  return s:lightline_coc_diagnostic('error', 'E')
-endfunction
-
-function! LightlineCocWarnings() abort
-  return s:lightline_coc_diagnostic('warning', 'W')
-endfunction
-
-function! LightlineCocInfos() abort
-  return s:lightline_coc_diagnostic('information', 'I')
-endfunction
-
-function! LightlineCocHints() abort
-  return s:lightline_coc_diagnostic('hints', 'H')
-endfunction
-
-autocmd User CocDiagnosticChange call lightline#update()
-
-" Coc configuration
-let g:coc_node_path = "/home/hicaro/Documentos/node-v18.12.1-linux-x64/bin/node"
-
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
-nmap <silent> [e <Plug>(coc-diagnostic-prev)
-nmap <silent> ]e <Plug>(coc-diagnostic-next)
-nmap <leader>ca  <Plug>(coc-codeaction-cursor)
-
-nmap <leader>d :CocList diagnostics<cr>
-nmap <leader>rn <Plug>(coc-rename)
-
-nmap <C-i> <Plug>(coc-format)
-
-autocmd CursorHold * silent call CocActionAsync('highlight')
-
-inoremap <silent><expr> <TAB>
-      \ coc#pum#visible() ? coc#_select_confirm() :
-      \ coc#expandableOrJumpable() ? "\<C-r>=coc#rpc#request('doKeymap', ['snippets-expand-jump',''])\<CR>" :
-      \ CheckBackspace() ? "\<TAB>" :
-      \ coc#refresh()
-
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-let g:coc_snippet_next = '<tab>'
-
-function! CheckBackspace() abort
-  let col = col('.') - 1
-  return !col || getline('.')[col - 1]  =~# '\s'
-endfunction
-
-nnoremap <silent> K :call ShowDocumentation()<CR>
-
-function! ShowDocumentation()
-  if CocAction('hasProvider', 'hover')
-    call CocActionAsync('doHover')
-  else
-    call feedkeys('K', 'in')
-  endif
-endfunction
+let g:lightline.separator = {
+  \   'left': '', 'right': ''
+\}
+let g:lightline.subseparator = {
+  \   'left': '', 'right': ''
+\}
 
 " Tabs configuration
 map <Leader>tn :tabnew<cr>
@@ -198,112 +99,3 @@ map <Leader>tc :tabclose<cr>
 map <Leader>to :tabonly<cr>
 nmap <C-h> :tabprevious<CR>
 nmap <C-l> :tabnext<CR>
-
-" Nvim-tree configuration
-
-" Nvim-Tree
-lua << EOF
-
-local status_ok, nvim_tree = pcall(require, "nvim-tree")
-if not status_ok then
-    return
-end
-
-local config_status_ok, nvim_tree_config = pcall(require, "nvim-tree.config")
-if not config_status_ok then
-    return
-end
-
-local tree_cb = nvim_tree_config.nvim_tree_callback
-
-nvim_tree.setup {
-  diagnostics = {
-	enable = true,
-	show_on_dirs = true,
-	debounce_delay = 50,
-	icons = {
-	hint = "",
-	    info = "",
-	    warning = "",
-	    error = "",
-	},
-  },
-  renderer = {
-    root_folder_modifier = ":t",
-    icons = {
-      glyphs = {
-        default = "",
-        symlink = "",
-        folder = {
-          arrow_open = "",
-          arrow_closed = "",
-          default = "",
-          open = "",
-          empty = "",
-          empty_open = "",
-          symlink = "",
-          symlink_open = "",
-        },
-        git = {
-          unstaged = "",
-          staged = "S",
-          unmerged = "",
-          renamed = "➜",
-          untracked = "U",
-          deleted = "",
-          ignored = "◌",
-        },
-      },
-    },
-  },
-  view = {
-    side = "left",
-    adaptive_size = true,
-    mappings = {
-      list = {
-        { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
-        { key = "h", cb = tree_cb "close_node" },
-        { key = "v", cb = tree_cb "vsplit" },
-        { key = "H", cb = tree_cb "split" },
-      },
-    },
-  },
-}
-
-EOF
-nmap <leader>p :NvimTreeToggle<CR>
-
-" Telescope
-"
-lua << EOF
-require('telescope').setup{
-  defaults = {
-    layout_config = {
-      horizontal = {
-        preview_cutoff = 0,
-      },
-    },
-  },
-}
-EOF
-
-if v:progpath =~ "git"
-    nmap <leader>f :lua require('telescope.builtin').git_files()<CR>
-else
-    nmap <leader>f :lua require('telescope.builtin').find_files()<CR>
-endif
-
-" Tree-sitter configuration
-"
-lua << EOF
-require'nvim-treesitter.configs'.setup {
-  ensure_installed = { "c", "rust", "python", "go", "dart" },
-  sync_install = false,
-  highlight = {
-    enable = true,
-    disable = { "markdown", "vim" },
-    additional_vim_regex_highlighting = false,
-  },
-}
-EOF
-
