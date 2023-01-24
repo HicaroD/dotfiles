@@ -41,11 +41,6 @@
     "key": "ctrl+r",
     "command": "debug.setVariable",
     "when": "variablesFocused"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "editor.action.rename",
-    "when": "editorHasRenameProvider && editorTextFocus && !editorReadonly"
-  },
+  }
 ]
 
