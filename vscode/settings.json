@@ -45,4 +45,27 @@
     "[javascript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+    "workbench.activityBar.visible": false,
+    "vim.leader": "<space>",
+
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["leader", "r"],
+            "commands": [
+                "editor.action.rename",
+            ]
+        },
+        {
+            "before": ["leader", "d"],
+            "commands": [
+                "editor.action.revealDefinition",
+            ]
+        }
+    ]
 }
