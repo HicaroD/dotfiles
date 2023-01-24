@@ -1,6 +1,6 @@
 {
     "editor.fontFamily": "Fantasque Sans Mono",
-    "editor.fontSize": 20,
+    "editor.fontSize": 23,
     "editor.rulers": [],
     "[dart]": {
         "editor.formatOnSave": true,
@@ -30,10 +30,19 @@
     "terminal.integrated.gpuAcceleration": "on",
     "search.searchOnType": false,
     "editor.codeLens": false,
-    "breadcrumbs.enabled": false,
-    "workbench.activityBar.visible": false,
+
+    "javascript.updateImportsOnFileMove.enabled": "always",
     "[javascriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "javascript.updateImportsOnFileMove.enabled": "always",
+    "[css]": {
+        "editor.defaultFormatter": "vscode.css-language-features"
+    },
+    "window.zoomLevel": -1,
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
 }
