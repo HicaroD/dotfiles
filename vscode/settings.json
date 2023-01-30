@@ -12,8 +12,6 @@
         "editor.tabCompletion": "onlySnippets",
         "editor.wordBasedSuggestions": false
     },
-
-    "git.enabled": false,
     "git.autofetch": false,
     "git.autorefresh": false,
     "git.confirmSync": false,
@@ -51,7 +49,6 @@
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
     },
-    "workbench.activityBar.visible": false,
     "vim.leader": "<space>",
 
     "vim.normalModeKeyBindings": [
@@ -67,5 +64,8 @@
                 "editor.action.revealDefinition",
             ]
         }
-    ]
+    ],
+    "git.enabled": false,
+    "editor.renderWhitespace": "none",
+    "files.autoSave": "afterDelay",
 }
