@@ -1,71 +1,84 @@
 {
-    "editor.fontFamily": "Fantasque Sans Mono",
-    "editor.fontSize": 23,
+  "editor.fontFamily": "Fantasque Sans Mono",
+  "editor.fontSize": 23,
+  "editor.rulers": [],
+  "[dart]": {
+    "editor.formatOnSave": true,
+    "editor.formatOnType": true,
     "editor.rulers": [],
-    "[dart]": {
-        "editor.formatOnSave": true,
-        "editor.formatOnType": true,
-        "editor.rulers": [],
-        "editor.selectionHighlight": false,
-        "editor.suggest.snippetsPreventQuickSuggestions": false,
-        "editor.suggestSelection": "first",
-        "editor.tabCompletion": "onlySnippets",
-        "editor.wordBasedSuggestions": false
-    },
-    "git.autofetch": false,
-    "git.autorefresh": false,
-    "git.confirmSync": false,
-    "git.terminalAuthentication": false,
-    
-    "editor.minimap.enabled": false,
-    "zenMode.hideActivityBar": false,
-    "zenMode.hideTabs": false,
-    "zenMode.restore": true,
-    "workbench.editor.enablePreview": false,
-    "workbench.editor.enablePreviewFromQuickOpen": false,
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.bracketPairColorization.enabled": false,
-    "terminal.integrated.gpuAcceleration": "on",
-    "search.searchOnType": false,
-    "editor.codeLens": false,
+    "editor.selectionHighlight": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.suggestSelection": "first",
+    "editor.tabCompletion": "onlySnippets",
+    "editor.wordBasedSuggestions": false
+  },
+  "git.autofetch": false,
+  "git.autorefresh": false,
+  "git.confirmSync": false,
+  "git.terminalAuthentication": false,
 
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    "[javascriptreact]": {
-        "editor.defaultFormatter": "vscode.typescript-language-features"
-    },
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "vscode.css-language-features"
-    },
-    "window.zoomLevel": -1,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[jsonc]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "extensions.experimental.affinity": {
-        "vscodevim.vim": 1
-    },
-    "vim.leader": "<space>",
+  "editor.minimap.enabled": false,
+  "zenMode.hideActivityBar": false,
+  "zenMode.hideTabs": false,
+  "zenMode.restore": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.gpuAcceleration": "on",
+  "search.searchOnType": false,
+  "editor.codeLens": false,
 
-    "vim.normalModeKeyBindings": [
-        {
-            "before": ["leader", "r"],
-            "commands": [
-                "editor.action.rename",
-            ]
-        },
-        {
-            "before": ["leader", "d"],
-            "commands": [
-                "editor.action.revealDefinition",
-            ]
-        }
-    ],
-    "git.enabled": false,
-    "editor.renderWhitespace": "none",
-    "files.autoSave": "afterDelay",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "vscode.typescript-language-features"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "window.zoomLevel": -1,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  "vim.leader": "<space>",
+
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["leader", "r"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["leader", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    }
+  ],
+  "git.enabled": false,
+  "editor.renderWhitespace": "none",
+  "files.autoSave": "afterDelay",
+
+  "workbench.colorCustomizations": {
+    "terminalCursor.background": "#ffffff90",
+    "activityBar.background": "#222222",
+    "activityBar.border": "#222222",
+    "activityBar.foreground": "#80cbc4",
+    "activityBar.inactiveForeground": "#3c706c",
+    "activityBarBadge.background": "#80cbc4",
+    "activityBarBadge.foreground": "#000000",
+    "statusBar.background": "#3c706c",
+    "statusBar.border": "#303030",
+    "statusBar.foreground": "#ffffff",
+    "statusBar.noFolderBackground": "#212121",
+    "statusBarItem.hoverBackground": "#4d918b",
+    "statusBarItem.remoteBackground": "#f48771",
+    "statusBarItem.remoteForeground": "#ffffff",
+    "textLink.foreground": "#80cbc4"
+  }
 }
