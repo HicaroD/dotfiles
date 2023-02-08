@@ -63,5 +63,8 @@
   "git.enabled": false,
   "editor.renderWhitespace": "none",
   "files.autoSave": "afterDelay",
-  "workbench.colorTheme": "Default Dark+ Experimental"
+  "workbench.colorTheme": "Default Dark+ Experimental",
+  "workbench.colorCustomizations": {
+		"editor.background": "#181818",
+  }
 }
