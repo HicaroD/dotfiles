@@ -99,12 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias notes="nvim ~/Documentos/Notes/"
-alias words="nvim ~/Documentos/Notes/words.md"
-alias proj="cd ~/Documentos/Projetos"
-alias vimrc="nvim ~/Documentos/dotfiles/neovim/init.vim"
-alias ideas="nvim ~/Documentos/Notes/ideas.txt"
-alias proto="cd ~/Documentos/Prototypes"
+alias notes="nvim ~/Documents/Notes/"
+alias words="nvim ~/Documents/Notes/words.md"
+alias proj="cd ~/Documents/Projects"
+alias ideas="nvim ~/Documents/Notes/ideas.txt"
+alias proto="cd ~/Documents/Prototypes"
 alias zshrc="nvim ~/.zshrc"
 
 # Golang
@@ -117,11 +116,11 @@ alias mesaconfig="cd ~ && ./mesaconfig"
 alias vi="nvim"
 
 # Flutter
-export PATH=/home/hicaro/flutter/bin:$PATH
+export PATH=/home/hicaro/Development/flutter/bin:$PATH
 
 # Java
 export PATH="$PATH:/usr/bin/java"
-export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-19-openjdk/
 
 # Google Chrome
 export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
@@ -136,10 +135,12 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 export PATH="$PATH:~/Documentos/node-v18.12.1-linux-x64/bin"
 
 export PATH="$PATH:~/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/bin/rust-analyzer"
-source /home/hicaro/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # Clangd
 export PATH="$PATH:/home/hicaro/Documentos/clangd_15.0.6/bin/"
 
 # gopls
 export PATH="$PATH:/home/hicaro/go/bin/"
+
+# Insomnia
+export PATH="$PATH:~/Development/Insomnia.Core-2022.7.5/insomnia"
