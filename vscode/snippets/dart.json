@@ -41,7 +41,7 @@
 			"class $1DatasourceImpl implements I$1Datasource {",
 			"}",
 		],
-		"description": "Class for repository implementation"
+		"description": "Class for datasource implementation"
 	},
 
 	"Abstract class for Datasource": {
