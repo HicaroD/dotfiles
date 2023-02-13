@@ -46,25 +46,14 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "asvetliakov.vscode-neovim": 1
   },
-  "vim.leader": "<space>",
-
-  "vim.normalModeKeyBindings": [
-    {
-      "before": ["leader", "r"],
-      "commands": ["editor.action.rename"]
-    },
-    {
-      "before": ["leader", "d"],
-      "commands": ["editor.action.revealDefinition"]
-    }
-  ],
+  "vscode-neovim.mouseSelectionStartVisualMode": true,
   "git.enabled": false,
   "editor.renderWhitespace": "none",
   "files.autoSave": "afterDelay",
   "workbench.colorTheme": "Default Dark+ Experimental",
   "workbench.colorCustomizations": {
 		"editor.background": "#181818",
-  }
+  },
 }
