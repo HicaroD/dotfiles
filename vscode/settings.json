@@ -48,12 +48,12 @@
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
-  "vscode-neovim.mouseSelectionStartVisualMode": true,
   "git.enabled": false,
   "editor.renderWhitespace": "none",
   "files.autoSave": "afterDelay",
   "workbench.colorTheme": "Default Dark+ Experimental",
   "workbench.colorCustomizations": {
-		"editor.background": "#181818",
+		"editor.background": "#181818"
   },
+  "vscode-neovim.mouseSelectionStartVisualMode": true,
 }
