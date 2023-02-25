@@ -46,7 +46,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+    "vscodevim.vim": 1
   },
   "git.enabled": false,
   "editor.renderWhitespace": "none",
@@ -54,6 +54,8 @@
   "workbench.colorCustomizations": {
 		"editor.background": "#181818"
   },
-  "vscode-neovim.mouseSelectionStartVisualMode": true,
   "workbench.colorTheme": "Default Dark+ Experimental",
+  "[python]": {
+    "editor.formatOnType": true
+  },
 }
