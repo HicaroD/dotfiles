@@ -102,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 alias notes="nvim ~/Documents/Notes/"
 alias words="nvim ~/Documents/Notes/words.md"
 alias proj="cd ~/Documents/Projects"
-alias ideas="nvim ~/Documents/Notes/ideas.txt"
+alias ideas="nvim ~/Documents/Notes/ideas.md"
 alias proto="cd ~/Documents/Prototypes"
 alias zshrc="nvim ~/.zshrc"
 
