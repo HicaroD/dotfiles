@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 23,
+  "editor.fontSize": 24,
   "editor.rulers": [],
   "[dart]": {
     "editor.formatOnSave": true,
@@ -23,7 +23,6 @@
   "zenMode.restore": true,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.gpuAcceleration": "on",
   "search.searchOnType": false,
   "editor.codeLens": false,
@@ -46,11 +45,10 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "extensions.experimental.affinity": {
-    "vscodevim.vim": 1
+    "asvetliakov.vscode-neovim": 1
   },
   "git.enabled": false,
   "editor.renderWhitespace": "none",
-  "files.autoSave": "afterDelay",
   "workbench.colorCustomizations": {
 		"editor.background": "#181818"
   },
@@ -58,4 +56,17 @@
   "[python]": {
     "editor.formatOnType": true
   },
+  "vscode-neovim.mouseSelectionStartVisualMode": true,
+  "files.autoSave": "afterDelay",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.activityBar.visible": false
 }
