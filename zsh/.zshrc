@@ -99,11 +99,11 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias notes="nvim ~/Documents/Notes/"
-alias words="nvim ~/Documents/Notes/words.md"
-alias proj="cd ~/Documents/Projects"
-alias ideas="nvim ~/Documents/Notes/ideas.md"
-alias proto="cd ~/Documents/Prototypes"
+alias notes="nvim ~/Documentos/Notes/"
+alias words="nvim ~/Documentos/Notes/words.md"
+alias proj="cd ~/Documentos/Projects"
+alias ideas="nvim ~/Documentos/Notes/ideas.md"
+alias proto="cd ~/Documentos/Prototypes"
 alias zshrc="nvim ~/.zshrc"
 
 # Golang
@@ -116,11 +116,11 @@ alias mesaconfig="cd ~ && ./mesaconfig"
 alias vi="nvim"
 
 # Flutter
-export PATH=/home/hicaro/Development/flutter/bin:$PATH
+export PATH=/home/hicaro/Documentos/Development/flutter/bin:$PATH
 
 # Java
 export PATH="$PATH:/usr/bin/java"
-export JAVA_HOME=/home/hicaro/Development/android-studio/jbr
+export JAVA_HOME=/home/hicaro/Documentos/Development/android-studio-2022.1.1.21-linux/android-studio/jbr
 export PATH=$PATH:$JAVA_HOME/bin
 
 export PATH=$PATH:/opt/discord
@@ -131,3 +131,7 @@ export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Insomnia
 export PATH="$PATH:~/Development/Insomnia.Core-2022.7.5/insomnia"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
