@@ -2,8 +2,8 @@
   "editor.fontFamily": "Fantasque Sans Mono",
   "editor.fontSize": 24,
   "editor.rulers": [],
+  "editor.formatOnSave": true,
   "[dart]": {
-    "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "editor.rulers": [],
     "editor.selectionHighlight": false,
@@ -52,8 +52,8 @@
   "workbench.colorCustomizations": {
 		"editor.background": "#181818"
   },
-  "workbench.colorTheme": "Default Dark+ Experimental",
   "[python]": {
+    
     "editor.formatOnType": true
   },
   "vscode-neovim.mouseSelectionStartVisualMode": true,
@@ -68,5 +68,6 @@
   "typescript.preferences.importModuleSpecifier": "relative",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "workbench.colorTheme": "Default Dark+ Experimental"
 }
