@@ -50,10 +50,9 @@
   "git.enabled": false,
   "editor.renderWhitespace": "none",
   "workbench.colorCustomizations": {
-		"editor.background": "#181818"
+    "editor.background": "#181818"
   },
   "[python]": {
-    
     "editor.formatOnType": true
   },
   "vscode-neovim.mouseSelectionStartVisualMode": true,
@@ -61,7 +60,7 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true,
+    "editor.formatOnPaste": true
   },
   "workbench.iconTheme": "material-icon-theme",
   "typescript.updateImportsOnFileMove.enabled": "always",
