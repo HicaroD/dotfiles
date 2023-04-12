@@ -13,12 +13,13 @@
 
 ### Tools
 
-| Tools										 |
-|--------------------------------------------|
-| [Neovim][] (Main code editor)				 			 |
+| Tools										                      |
+|-----------------------------------------------------------------|
+| [Neovim][] (Main code editor)				 			          |
 | Visual Studio Code with Vim keybindings (Secondary code editor) |
-| [Kitty][] (Terminal emulator)				 |
-| Ubuntu 22.04 LTS						               |
+| [Alacritty][] (Terminal emulator)				                  |
+| Tmux (Terminal multiplexer)                                     |
+| Manjaro Arch Linux with Gnome                                   |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
-[Kitty]: https://sw.kovidgoyal.net/kitty/
+[Kitty]: https://alacritty.org/
