@@ -22,4 +22,4 @@
 | Manjaro Arch Linux with Gnome                                   |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
-[Kitty]: https://alacritty.org/
+[Alacritty]: https://alacritty.org/
