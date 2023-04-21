@@ -17,9 +17,9 @@
 |-----------------------------------------------------------------|
 | [Neovim][] (Main code editor)				 			          |
 | Visual Studio Code with Vim keybindings (Secondary code editor) |
-| [Alacritty][] (Terminal emulator)				                  |
+| Kitty (Terminal emulator)				                          |
 | Tmux (Terminal multiplexer)                                     |
 | Manjaro Arch Linux with Gnome                                   |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
-[Alacritty]: https://alacritty.org/
+
