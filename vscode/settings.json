@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 24,
+  "editor.fontSize": 20,
   "editor.rulers": [],
   "editor.formatOnSave": true,
   "[dart]": {
@@ -37,7 +37,6 @@
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "window.zoomLevel": -1,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -69,5 +68,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "workbench.colorTheme": "Default Dark+ Experimental",
-  "extensions.ignoreRecommendations": true
+  "extensions.ignoreRecommendations": true,
+  "C_Cpp.formatting": "vcFormat",
 }
