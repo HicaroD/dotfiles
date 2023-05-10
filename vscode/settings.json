@@ -54,7 +54,6 @@
   "[python]": {
     "editor.formatOnType": true
   },
-  "vscode-neovim.mouseSelectionStartVisualMode": true,
   "files.autoSave": "afterDelay",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
@@ -67,7 +66,9 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "workbench.colorTheme": "Default Dark+ Experimental",
   "extensions.ignoreRecommendations": true,
   "C_Cpp.formatting": "vcFormat",
+  "workbench.activityBar.visible": false,
+  "editor.cursorBlinking": "smooth",
+  "editor.cursorSmoothCaretAnimation": "on"
 }
