@@ -1,7 +1,7 @@
 {
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 20,
-  "editor.rulers": [],
+  "editor.fontSize": 24,
+  "editor.rulers": [120],
   "editor.formatOnSave": true,
   "[dart]": {
     "editor.formatOnType": true,
@@ -71,5 +71,48 @@
   "C_Cpp.formatting": "vcFormat",
   "editor.cursorBlinking": "smooth",
   "editor.cursorSmoothCaretAnimation": "on",
-  "window.menuBarVisibility": "toggle"
+  "window.menuBarVisibility": "toggle",
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "name": "Italic",
+        "scope": [
+          "comment",
+          "entity.other.attribute-name",
+          "keyword",
+          "markup.underline.link",
+          "storage.modifier",
+          "storage.type",
+          "string.url",
+          "variable.language.super",
+          "variable.language.this"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "name": "Italic reset",
+        "scope": [
+          "keyword.operator",
+          "keyword.other.type",
+          "storage.modifier.import",
+          "storage.modifier.package",
+          "storage.type.built-in",
+          "storage.type.function.arrow",
+          "storage.type.generic",
+          "storage.type.java",
+          "storage.type.primitive"
+        ],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "window.zoomLevel": -1,
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "workbench.activityBar.visible": false,
 }
