@@ -16,7 +16,6 @@
   "git.autorefresh": false,
   "git.confirmSync": false,
   "git.terminalAuthentication": false,
-
   "editor.minimap.enabled": false,
   "zenMode.hideActivityBar": false,
   "zenMode.hideTabs": false,
@@ -59,7 +58,11 @@
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "editor.formatOnPaste": true
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true,
+      "source.fixAll": true
+    }
   },
   "workbench.iconTheme": "material-icon-theme",
   "typescript.updateImportsOnFileMove.enabled": "always",
@@ -113,6 +116,5 @@
   },
   "window.zoomLevel": -1,
   "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
-  "workbench.activityBar.visible": false,
+  "files.insertFinalNewline": true
 }
