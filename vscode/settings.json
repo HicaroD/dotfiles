@@ -60,8 +60,7 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
-      "source.fixAll": true
+      "source.organizeImports": true
     }
   },
   "workbench.iconTheme": "material-icon-theme",
@@ -116,5 +115,7 @@
   },
   "window.zoomLevel": -1,
   "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true
+  "files.insertFinalNewline": true,
+  "breadcrumbs.enabled": false,
+  "workbench.tree.renderIndentGuides": "always"
 }
