@@ -115,7 +115,10 @@
   },
   "window.zoomLevel": -1,
   "files.trimTrailingWhitespace": true,
-  "files.insertFinalNewline": true,
   "breadcrumbs.enabled": false,
-  "workbench.tree.renderIndentGuides": "always"
+  "workbench.tree.renderIndentGuides": "always",
+  "workbench.activityBar.visible": false,
+  "workbench.editor.highlightModifiedTabs": true,
+  "files.trimFinalNewlines": true,
+  "explorer.sortOrder": "type"
 }
