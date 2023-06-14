@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 22,
+  "editor.fontSize": 24,
   "editor.rulers": [],
   "editor.formatOnSave": true,
   "[dart]": {
@@ -122,5 +122,6 @@
   "workbench.tree.renderIndentGuides": "always",
   "workbench.editor.highlightModifiedTabs": true,
   "files.trimFinalNewlines": true,
-  "explorer.sortOrder": "type"
+  "explorer.sortOrder": "type",
+  "workbench.activityBar.visible": false
 }
