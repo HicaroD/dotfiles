@@ -1,7 +1,7 @@
 {
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 24,
-  "editor.rulers": [120],
+  "editor.fontSize": 22,
+  "editor.rulers": [],
   "editor.formatOnSave": true,
   "[dart]": {
     "editor.formatOnType": true,
@@ -117,7 +117,6 @@
   "files.trimTrailingWhitespace": true,
   "breadcrumbs.enabled": false,
   "workbench.tree.renderIndentGuides": "always",
-  "workbench.activityBar.visible": false,
   "workbench.editor.highlightModifiedTabs": true,
   "files.trimFinalNewlines": true,
   "explorer.sortOrder": "type"
