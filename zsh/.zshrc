@@ -141,4 +141,3 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 
 export PATH="$PATH:/home/hicaro/.local/share/gem/ruby/3.0.0/bin"
-

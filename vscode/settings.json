@@ -1,6 +1,6 @@
 {
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 24,
+  "editor.fontSize": 22,
   "editor.rulers": [],
   "editor.formatOnSave": true,
   "[dart]": {
@@ -40,7 +40,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
@@ -54,9 +54,7 @@
     "editor.formatOnType": true,
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "python.linting.pylintArgs": [
-    "----extension-pkg-whitelist=1xml",
-  ],
+  "python.linting.pylintArgs": ["----extension-pkg-whitelist=1xml"],
   "files.autoSave": "afterDelay",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
