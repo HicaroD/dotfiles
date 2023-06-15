@@ -1,0 +1,10 @@
+{
+	"Build a class with a defined constructor": {
+		"prefix": "cls",
+		"body": [
+			"class $1:",
+			"\tdef __init__(self) -> None:",
+			"\t\tpass"
+		]
+	}
+}
