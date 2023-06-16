@@ -25,7 +25,6 @@
   "terminal.integrated.gpuAcceleration": "on",
   "search.searchOnType": false,
   "editor.codeLens": false,
-
   "javascript.updateImportsOnFileMove.enabled": "always",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -42,9 +41,7 @@
   "[jsonc]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   },
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  },
+  "vim.leader": ",",
   "git.enabled": false,
   "editor.renderWhitespace": "none",
   "workbench.colorCustomizations": {
@@ -54,7 +51,9 @@
     "editor.formatOnType": true,
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  "python.linting.pylintArgs": ["----extension-pkg-whitelist=1xml"],
+  "python.linting.pylintArgs": [
+    "----extension-pkg-whitelist=1xml"
+  ],
   "files.autoSave": "afterDelay",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
