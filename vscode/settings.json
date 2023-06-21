@@ -120,5 +120,6 @@
   "workbench.editor.highlightModifiedTabs": true,
   "files.trimFinalNewlines": true,
   "explorer.sortOrder": "type",
-  "workbench.activityBar.visible": false
+  "go.toolsManagement.autoUpdate": true,
+  "workbench.activityBar.visible": false,
 }
