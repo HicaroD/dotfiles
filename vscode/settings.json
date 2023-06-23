@@ -76,6 +76,24 @@
         "workbench.action.closeActiveEditor"
       ],
       "silent": true,
+    },
+    {
+      "before": [
+        "<C-l>",
+      ],
+      "commands": [
+        "workbench.action.nextEditor"
+      ],
+      "silent": true,
+    },
+    {
+      "before": [
+        "<C-h>",
+      ],
+      "commands": [
+        "workbench.action.previousEditor"
+      ],
+      "silent": true,
     }
   ],
   "extensions.ignoreRecommendations": true,
