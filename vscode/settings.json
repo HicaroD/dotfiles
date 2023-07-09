@@ -42,7 +42,6 @@
     "editor.defaultFormatter": "vscode.json-language-features"
   },
   "vim.leader": ",",
-  "git.enabled": false,
   "editor.renderWhitespace": "none",
   "[python]": {
     "editor.formatOnType": true,
@@ -149,5 +148,8 @@
   "explorer.sortOrder": "type",
   "go.toolsManagement.autoUpdate": true,
   "workbench.colorTheme": "GitHub Dark Dimmed",
+  "explorer.confirmDragAndDrop": false,
+  "editor.inlayHints.fontFamily": "Fantasque Sans Mono",
   "workbench.activityBar.visible": false,
+  "git.enabled": false,
 }
