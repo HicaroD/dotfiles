@@ -95,16 +95,13 @@ source $ZSH/oh-my-zsh.sh
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias notes="nvim ~/Documentos/Notes/"
 alias words="nvim ~/Documentos/Notes/words.md"
 alias proj="cd ~/Documentos/Projects"
 alias ideas="nvim ~/Documentos/Notes/ideas.md"
 alias proto="cd ~/Documentos/Prototypes"
 alias zshrc="nvim ~/.zshrc"
+alias tolearn="nvim ~/Documentos/Notes/tolearn.md"
 
 # Golang
 export PATH=$PATH:/usr/local/go/bin
