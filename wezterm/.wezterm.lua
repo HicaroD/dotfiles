@@ -1,7 +1,7 @@
 local wezterm = require 'wezterm'
 
 local config = {}
-local dimmer = { brightness = 0.1 }
+local dimmer = { brightness = 0.2 }
 
 config.color_scheme = 'Gruvbox Dark (Gogh)'
 config.font = wezterm.font('Fantasque Sans Mono')
@@ -12,7 +12,7 @@ config.default_cursor_style = 'SteadyBar'
 config.background = {
   {
     source = {
-      File = "/home/hicaro/Documentos/gargantua.png",
+      File = "/home/hicaro/Documentos/enderman.jpg",
     },
     hsb = dimmer
   }
