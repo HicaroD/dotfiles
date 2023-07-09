@@ -3,7 +3,7 @@ local wezterm = require 'wezterm'
 local config = {}
 local dimmer = { brightness = 0.1 }
 
-config.color_scheme = 'Vs Code Dark+ (Gogh)'
+config.color_scheme = 'Gruvbox Dark (Gogh)'
 config.font = wezterm.font('Fantasque Sans Mono')
 config.font_size = 12
 
