@@ -7,6 +7,8 @@ config.color_scheme = 'Vs Code Dark+ (Gogh)'
 config.font = wezterm.font('Fantasque Sans Mono')
 config.font_size = 12
 
+config.default_cursor_style = 'SteadyBar'
+
 config.background = {
   {
     source = {
