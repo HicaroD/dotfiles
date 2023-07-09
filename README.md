@@ -13,13 +13,11 @@
 
 ### Tools
 
-| Tools										                      |
-|-----------------------------------------------------------------|
-| [Neovim][] (Main code editor)				 			          |
+| Tools                                                           |
+| --------------------------------------------------------------- |
+| [Neovim][] (Main code editor)                                   |
 | Visual Studio Code with Vim keybindings (Secondary code editor) |
-| Kitty (Terminal emulator)				                          |
-| Tmux (Terminal multiplexer)                                     |
+| Wezterm (Terminal emulator)                                     |
 | Manjaro Arch Linux with Gnome                                   |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
-
