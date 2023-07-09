@@ -1,17 +1,16 @@
 local wezterm = require 'wezterm'
 
 local config = {}
+local dimmer = { brightness = 0.1 }
 
 config.color_scheme = 'Vs Code Dark+ (Gogh)'
 config.font = wezterm.font('Fantasque Sans Mono')
 config.font_size = 12
 
-local dimmer = { brightness = 0.1 }
-
 config.background = {
   {
     source = {
-      File = "/home/hicaro/Documentos/gargantua.jpg",
+      File = "/home/hicaro/Documentos/gargantua.png",
     },
     hsb = dimmer
   }
@@ -23,6 +22,5 @@ config.window_padding = {
   top = 0,
   bottom = 0,
 }
-
 
 return config
