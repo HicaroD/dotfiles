@@ -93,6 +93,15 @@
         "workbench.action.previousEditor"
       ],
       "silent": true,
+    },
+    {
+      "before": [
+        "<leader>",
+        "r"
+      ],
+      "commands": [
+        "editor.action.rename",
+      ]
     }
   ],
   "extensions.ignoreRecommendations": true,
@@ -153,4 +162,5 @@
   "explorer.confirmDragAndDrop": false,
   "editor.inlayHints.fontFamily": "Fantasque Sans Mono",
   "git.enabled": false,
+  "workbench.activityBar.visible": false,
 }
