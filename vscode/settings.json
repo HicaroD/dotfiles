@@ -139,6 +139,9 @@
       }
     ]
   },
+  "workbench.colorCustomizations": {
+    "editor.background": "#181818",
+  },
   "window.zoomLevel": -1,
   "files.trimTrailingWhitespace": true,
   "breadcrumbs.enabled": false,
@@ -147,9 +150,7 @@
   "files.trimFinalNewlines": true,
   "explorer.sortOrder": "type",
   "go.toolsManagement.autoUpdate": true,
-  "workbench.colorTheme": "GitHub Dark Dimmed",
   "explorer.confirmDragAndDrop": false,
   "editor.inlayHints.fontFamily": "Fantasque Sans Mono",
-  "workbench.activityBar.visible": false,
   "git.enabled": false,
 }
