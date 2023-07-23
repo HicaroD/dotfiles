@@ -5,7 +5,7 @@ local dimmer = { brightness = 0.2 }
 
 config.color_scheme = 'Gruvbox Dark (Gogh)'
 config.font = wezterm.font('Fantasque Sans Mono')
-config.font_size = 13.5
+config.font_size = 13.8
 
 config.default_cursor_style = 'SteadyBar'
 
