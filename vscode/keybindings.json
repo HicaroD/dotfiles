@@ -42,12 +42,4 @@
     "command": "debug.setVariable",
     "when": "variablesFocused"
   },
-  {
-    "key": "ctrl+n",
-    "command": "editor.action.marker.next",
-  },
-  {
-    "key": "ctrl+m",
-    "command": "editor.action.marker.prev",
-  },
 ]
