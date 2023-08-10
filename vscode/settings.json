@@ -225,5 +225,4 @@
   "explorer.confirmDragAndDrop": false,
   "editor.inlayHints.fontFamily": "Fantasque Sans Mono",
   "git.enabled": false,
-  "workbench.activityBar.visible": false,
 }
