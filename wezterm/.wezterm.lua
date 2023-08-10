@@ -6,6 +6,7 @@ local dimmer = { brightness = 0.5 }
 config.color_scheme = 'Gruvbox Dark (Gogh)'
 config.font = wezterm.font('Fantasque Sans Mono')
 config.font_size = 13.8
+config.audible_bell = "Disabled"
 
 config.default_cursor_style = 'SteadyBar'
 
