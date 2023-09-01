@@ -127,7 +127,9 @@ export PATH="$PATH:/home/hicaro/Android/Sdk"
 export PATH="$PATH":"$HOME/.pub-cache/bin"
 
 # Insomnia
-export PATH="$PATH:~/Development/Insomnia.Core-2022.7.5/insomnia"
+# export PATH="$PATH:~/Development/Insomnia.Core-2022.7.5/insomnia"
+export PATH="$PATH:/opt/insomnia"
+
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -136,5 +138,16 @@ export NVM_DIR="$HOME/.nvm"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-
 export PATH="$PATH:/home/hicaro/.local/share/gem/ruby/3.0.0/bin"
+
+# Android SDK
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+# Custom functions
+calendar() {
+  if type "python" > /dev/null; then
+    python -m calendar
+  fi
+}
