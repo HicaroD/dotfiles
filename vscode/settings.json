@@ -12,10 +12,6 @@
     "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
-  "git.autofetch": false,
-  "git.autorefresh": false,
-  "git.confirmSync": false,
-  "git.terminalAuthentication": false,
   "editor.minimap.enabled": false,
   "zenMode.hideActivityBar": false,
   "zenMode.hideTabs": false,
@@ -166,8 +162,7 @@
   ],
   "extensions.ignoreRecommendations": true,
   "C_Cpp.formatting": "vcFormat",
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorSmoothCaretAnimation": "on",
+  "editor.cursorSmoothCaretAnimation": "off",
   "window.menuBarVisibility": "toggle",
   "security.workspace.trust.untrustedFiles": "open",
   "editor.tokenColorCustomizations": {
