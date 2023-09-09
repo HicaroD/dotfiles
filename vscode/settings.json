@@ -48,9 +48,6 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
   },
-  "python.linting.pylintArgs": [
-    "----extension-pkg-whitelist=1xml"
-  ],
   "files.autoSave": "afterDelay",
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
