@@ -159,6 +159,17 @@
       "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly",
       "silent": true,
     },
+    {
+      "before": [
+        "<leader>",
+        "p",
+        "s",
+      ],
+      "commands": [
+        "workbench.action.findInFiles",
+      ],
+      "silent": true,
+    },
   ],
   "extensions.ignoreRecommendations": true,
   "C_Cpp.formatting": "vcFormat",
