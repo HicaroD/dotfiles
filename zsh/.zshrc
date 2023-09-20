@@ -117,7 +117,7 @@ export PATH=/home/hicaro/Documentos/Development/flutter/bin:$PATH
 
 # Java
 export PATH="$PATH:/usr/bin/java"
-export JAVA_HOME=/usr/lib/jvm/java-20-openjdk
+export JAVA_HOME=/home/hicaro/Documentos/Development/android-studio/jbr
 export PATH=$PATH:$JAVA_HOME/bin
 
 export PATH=$PATH:/opt/discord
