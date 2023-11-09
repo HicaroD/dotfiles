@@ -1,15 +1,13 @@
 {
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 22,
+  "editor.fontSize": 26,
   "editor.rulers": [],
   "editor.formatOnSave": true,
   "[dart]": {
-    "editor.formatOnType": true,
     "editor.rulers": [],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
-    "editor.tabCompletion": "onlySnippets",
     "editor.wordBasedSuggestions": false
   },
   "editor.minimap.enabled": false,
@@ -40,9 +38,8 @@
   "vim.leader": ",",
   "editor.renderWhitespace": "none",
   "[python]": {
-    "editor.formatOnType": true,
-    "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
+    "editor.defaultFormatter": "ms-python.black-formatter",
   },
   "files.autoSave": "afterDelay",
   "[typescript]": {
@@ -179,7 +176,6 @@
   "workbench.colorCustomizations": {
     "editor.background": "#181818",
   },
-  "window.zoomLevel": -1,
   "files.trimTrailingWhitespace": true,
   "breadcrumbs.enabled": false,
   "workbench.tree.renderIndentGuides": "always",
@@ -192,5 +188,8 @@
   "git.enabled": false,
   "files.insertFinalNewline": true,
   "C_Cpp.intelliSenseEngine": "disabled",
-  "workbench.activityBar.visible": false,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "window.zoomLevel": -2,
 }
