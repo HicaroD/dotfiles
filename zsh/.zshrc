@@ -102,6 +102,7 @@ alias ideas="nvim ~/Documentos/Notes/ideas.md"
 alias proto="cd ~/Documentos/Prototypes"
 alias zshrc="nvim ~/.zshrc"
 alias tolearn="nvim ~/Documentos/Notes/tolearn.md"
+alias code="vscodium"
 
 # Golang
 export PATH=$PATH:/usr/local/go/bin
@@ -151,3 +152,5 @@ calendar() {
     python -m calendar
   fi
 }
+
+[ -f "/home/hicaro/.ghcup/env" ] && source "/home/hicaro/.ghcup/env" # ghcup-env
