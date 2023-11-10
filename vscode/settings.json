@@ -1,8 +1,7 @@
 {
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 26,
+  "editor.fontSize": 22,
   "editor.rulers": [],
-  "editor.formatOnSave": true,
   "[dart]": {
     "editor.rulers": [],
     "editor.selectionHighlight": false,
@@ -11,12 +10,9 @@
     "editor.wordBasedSuggestions": false
   },
   "editor.minimap.enabled": false,
-  "zenMode.hideActivityBar": false,
-  "zenMode.hideTabs": false,
-  "zenMode.restore": true,
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
-  "terminal.integrated.gpuAcceleration": "on",
+  "vim.statusBarColorControl": false,
   "search.searchOnType": false,
   "editor.codeLens": false,
   "javascript.updateImportsOnFileMove.enabled": "always",
@@ -169,7 +165,6 @@
     },
   ],
   "extensions.ignoreRecommendations": true,
-  "C_Cpp.formatting": "vcFormat",
   "editor.cursorSmoothCaretAnimation": "off",
   "window.menuBarVisibility": "toggle",
   "security.workspace.trust.untrustedFiles": "open",
@@ -187,9 +182,12 @@
   "editor.inlayHints.fontFamily": "Fantasque Sans Mono",
   "git.enabled": false,
   "files.insertFinalNewline": true,
-  "C_Cpp.intelliSenseEngine": "disabled",
-  "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
-  },
-  "window.zoomLevel": -2,
+  "editor.cursorStyle": "line",
+  "editor.cursorBlinking": "smooth",
+  "editor.autoClosingBrackets": "never",
+  "editor.autoClosingQuotes": "never",
+  "rust-analyzer.inlayHints.bindingModeHints.enable": true,
+  "workbench.activityBar.location": "hidden",
+  "window.zoomLevel": -1,
+  "terminal.integrated.fontSize": 17,
 }
