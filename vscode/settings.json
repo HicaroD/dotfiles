@@ -29,7 +29,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "vscode.json-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "vim.leader": ",",
   "editor.renderWhitespace": "none",
@@ -163,6 +163,11 @@
       ],
       "silent": true,
     },
+    {
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"],
+      "silent": true,
+    }
   ],
   "extensions.ignoreRecommendations": true,
   "editor.cursorSmoothCaretAnimation": "off",
@@ -187,7 +192,7 @@
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
   "rust-analyzer.inlayHints.bindingModeHints.enable": true,
-  "workbench.activityBar.location": "hidden",
   "window.zoomLevel": -1,
   "terminal.integrated.fontSize": 17,
+  "workbench.activityBar.location": "hidden",
 }
