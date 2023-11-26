@@ -6,18 +6,19 @@
                           \____ |\____/|__|  |__|  |__|____/\___  >____  >
                                \/                               \/     \/
 
-                         This repository contains personal dotfiles of Icarus.
+                        This repository contains personal dotfiles of Icarus.
 ```
 
 # dotfiles
 
 ### Tools
 
-| Tools                                   |
-| --------------------------------------- |
-| [Neovim][]                              |
-| Visual Studio Code with Vim keybindings |
-| Kitty (Terminal emulator)               |
-| Manjaro Arch Linux with Gnome           |
+| Tools                      |
+| -------------------------- |
+| [Neovim][]                 |
+| Vscodium with Vim plugin   |
+| Kitty (Terminal emulator)  |
+| Arch Linux (Manjaro)       |
+| i3 (tiling window manager) |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
