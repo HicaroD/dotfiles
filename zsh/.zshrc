@@ -102,7 +102,6 @@ alias ideas="nvim ~/Documentos/Notes/ideas.md"
 alias proto="cd ~/Documentos/Prototypes"
 alias zshrc="nvim ~/.zshrc"
 alias tolearn="nvim ~/Documentos/Notes/tolearn.md"
-alias code="vscodium"
 
 # Golang
 export PATH=$PATH:/usr/local/go/bin
