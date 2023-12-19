@@ -2,12 +2,13 @@
   "editor.fontFamily": "Fantasque Sans Mono",
   "editor.fontSize": 22,
   "editor.rulers": [],
+  "editor.formatOnSave": true,
   "[dart]": {
     "editor.rulers": [],
     "editor.selectionHighlight": false,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.suggestSelection": "first",
-    "editor.wordBasedSuggestions": false
+    "editor.wordBasedSuggestions": "off"
   },
   "editor.minimap.enabled": false,
   "workbench.editor.enablePreview": false,
@@ -29,7 +30,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "vim.leader": ",",
   "editor.renderWhitespace": "none",
@@ -43,8 +44,8 @@
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true,
-      "source.fixAll": true,
+      "source.organizeImports": "explicit",
+      "source.fixAll": "explicit"
     }
   },
   "workbench.iconTheme": "material-icon-theme",
@@ -163,11 +164,6 @@
       ],
       "silent": true,
     },
-    {
-      "before": ["<leader>", "t"],
-      "commands": ["workbench.action.terminal.toggleTerminal"],
-      "silent": true,
-    }
   ],
   "extensions.ignoreRecommendations": true,
   "editor.cursorSmoothCaretAnimation": "off",
@@ -192,7 +188,10 @@
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
   "rust-analyzer.inlayHints.bindingModeHints.enable": true,
-  "window.zoomLevel": -1,
-  "terminal.integrated.fontSize": 17,
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
   "workbench.activityBar.location": "hidden",
+  "window.zoomLevel": -1,
+  "terminal.integrated.fontSize": 19,
 }
