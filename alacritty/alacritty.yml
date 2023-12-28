@@ -1,0 +1,17 @@
+font:
+  normal:
+    family: Fantasque Sans Mono
+    style: Regular
+
+  bold:
+    family: Fantasque Sans Mono
+    style: Bold
+
+  italic:
+    family: Fantasque Sans Mono
+    style: Italic
+
+  size: 13
+
+mouse:
+  hide_when_typing: true
