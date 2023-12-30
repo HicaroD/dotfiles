@@ -11,14 +11,14 @@
 
 # dotfiles
 
-### Tools
+## Tools
 
-| Tools                      |
-| -------------------------- |
-| [Neovim][]                 |
-| Vscodium with Vim plugin   |
-| Kitty (Terminal emulator)  |
-| Arch Linux (Manjaro)       |
-| i3 (tiling window manager) |
+| Tools                         |
+| ----------------------------- |
+| [Neovim][]                    |
+| Alacritty (Terminal emulator) |
+| tmux (Terminal multiplexer)   |
+| i3 (tiling window manager)    |
+| Arch Linux (Manjaro)          |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
