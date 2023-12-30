@@ -20,6 +20,9 @@ cursor:
   style:
     shape: Beam
 
+env:
+  term: xterm-256color
+
 # Colors (Gruvbox Material Dark Medium)
 colors:
   primary:
