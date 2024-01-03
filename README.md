@@ -13,12 +13,12 @@
 
 ## Tools
 
-| Tools                         |
-| ----------------------------- |
-| [Neovim][]                    |
-| Alacritty (Terminal emulator) |
-| tmux (Terminal multiplexer)   |
-| i3 (tiling window manager)    |
-| Arch Linux (Manjaro)          |
+| Tools                       |
+| --------------------------- |
+| [Neovim][]                  |
+| Kitty (Terminal emulator)   |
+| tmux (Terminal multiplexer) |
+| i3 (tiling window manager)  |
+| Arch Linux (Manjaro)        |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
