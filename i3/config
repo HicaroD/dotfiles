@@ -173,3 +173,6 @@ workspace 5 output eDP-1
 
 # Background image setup
 exec --no-startup-id nitrogen --restore
+
+# Startup configuration (mouse and monitor)
+exec_always ~/startup.sh
