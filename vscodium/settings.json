@@ -40,7 +40,7 @@
   "git.enabled": false,
   "files.insertFinalNewline": true,
   "extensions.experimental.affinity": {
-    "asvetliakov.vscode-neovim": 1
+    "vscodevim.vim": 1
   },
   "terminal.integrated.fontSize": 19,
   // Python
@@ -159,8 +159,8 @@
         "d"
       ],
       "commands": [
-        "editor.action.marker.prev"
-      ]
+        "editor.action.marker.prev",
+      ],
     },
     {
       "before": [
@@ -169,7 +169,7 @@
       ],
       "commands": [
         "editor.action.marker.next"
-      ]
+      ],
     },
     {
       "before": [
