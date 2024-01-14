@@ -15,6 +15,7 @@
 
 | Tools                      |
 | -------------------------- |
+| Vscodium                   |
 | [Neovim][]                 |
 | Kitty (Terminal emulator)  |
 | i3 (tiling window manager) |
