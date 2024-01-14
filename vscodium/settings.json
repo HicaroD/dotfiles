@@ -24,6 +24,8 @@
   "workbench.colorCustomizations": {
     "editor.background": "#181818",
   },
+  "search.useIgnoreFiles": true,
+  "search.useGlobalIgnoreFiles": true,
   // Other configuration
   "search.searchOnType": true,
   "files.trimTrailingWhitespace": true,
