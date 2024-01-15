@@ -85,11 +85,6 @@
       "silent": true
     },
     {
-      "before": ["<leader>", "t"],
-      "commands": ["workbench.action.focusActiveEditorGroup"],
-      "when": ["filesExplorerFocus && !editorFocus"]
-    },
-    {
       "before": ["<leader>", "e"],
       "commands": ["workbench.files.action.focusFilesExplorer"],
       "when": ["editorFocus"]
