@@ -58,6 +58,9 @@
   "javascript.updateImportsOnFileMove.enabled": "always",
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.importModuleSpecifier": "relative",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
   // Go
   "go.toolsManagement.autoUpdate": true,
   // Rust
@@ -162,6 +165,9 @@
         "editor.action.marker.prev",
       ],
     },
+
+
+
     {
       "before": [
         "]",
@@ -170,6 +176,10 @@
       "commands": [
         "editor.action.marker.next"
       ],
+    },
+    {
+      "before": ["leader", "l", "r"],
+      "commands": ["references-view.findReferences"]
     },
     {
       "before": [
@@ -246,5 +256,5 @@
       ]
     },
   ],
-  "workbench.activityBar.location": "hidden",
+
 }
