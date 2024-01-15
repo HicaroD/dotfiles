@@ -3,9 +3,7 @@
   "editor.fontFamily": "Fantasque Sans Mono",
   "editor.inlayHints.fontFamily": "Fantasque Sans Mono",
   "editor.fontSize": 22,
-  "editor.rulers": [
-    80
-  ],
+  "editor.rulers": [80],
   "editor.codeLens": false,
   "editor.renderWhitespace": "none",
   "editor.minimap.enabled": false,
@@ -22,7 +20,7 @@
   "workbench.tree.renderIndentGuides": "always",
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.colorCustomizations": {
-    "editor.background": "#181818",
+    "editor.background": "#181818"
   },
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
@@ -45,7 +43,7 @@
   "terminal.integrated.fontSize": 19,
   // Python
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "ms-python.black-formatter"
   },
   // Typescript / Javascript
   "[typescript]": {
@@ -67,194 +65,109 @@
   "rust-analyzer.inlayHints.bindingModeHints.enable": true,
   // Vim
   "vim.leader": ",",
+  "vim.useSystemClipboard": true,
   "vim.statusBarColorControl": false,
   "vim.hlsearch": true,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<leader>",
-        "r"
-      ],
-      "commands": [
-        "editor.action.rename",
-      ]
+      "before": ["<leader>", "r"],
+      "commands": ["editor.action.rename"]
     },
     {
-      "before": [
-        "K",
-      ],
-      "commands": [
-        "editor.action.showHover",
-      ],
+      "before": ["K"],
+      "commands": ["editor.action.showHover"],
       "silent": true,
       "when": "editorTextFocus"
     },
     {
-      "before": [
-        "<leader>",
-        "p",
-        "s",
-      ],
-      "commands": [
-        "workbench.action.findInFiles",
-      ],
-      "silent": true,
+      "before": ["<leader>", "p", "s"],
+      "commands": ["workbench.action.findInFiles"],
+      "silent": true
     },
     {
-      "before": [
-        "<leader>",
-        "e",
-      ],
-      "commands": [
-        "workbench.files.action.focusFilesExplorer",
-      ],
+      "before": ["<leader>", "t"],
+      "commands": ["workbench.action.focusActiveEditorGroup"],
+      "when": ["filesExplorerFocus && !editorFocus"]
     },
     {
-      "before": [
-        "leader",
-        "c",
-      ],
-      "commands": [
-        "workbench.action.closeActiveEditor"
-      ],
-      "silent": true,
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.files.action.focusFilesExplorer"],
+      "when": ["editorFocus"]
+    },
+    {
+      "before": ["leader", "c"],
+      "commands": ["workbench.action.closeActiveEditor"],
+      "silent": true
     },
     // NAVIGATION
     // switch b/w buffers
     {
-      "before": [
-        "<C-h>"
-      ],
-      "commands": [
-        ":bprevious"
-      ]
+      "before": ["<C-h>"],
+      "commands": [":bprevious"]
     },
     {
-      "before": [
-        "<C-l>"
-      ],
-      "commands": [
-        ":bnext"
-      ]
+      "before": ["<C-l>"],
+      "commands": [":bnext"]
     },
     // splits
     {
-      "before": [
-        "leader",
-        "v"
-      ],
-      "commands": [
-        ":vsplit"
-      ]
+      "before": ["leader", "v"],
+      "commands": [":vsplit"]
     },
     {
-      "before": [
-        "leader",
-        "s"
-      ],
-      "commands": [
-        ":split"
-      ]
+      "before": ["leader", "s"],
+      "commands": [":split"]
     },
     {
-      "before": [
-        "[",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.prev",
-      ],
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prev"]
     },
 
-
-
     {
-      "before": [
-        "]",
-        "d"
-      ],
-      "commands": [
-        "editor.action.marker.next"
-      ],
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.next"]
     },
     {
       "before": ["leader", "l", "r"],
       "commands": ["references-view.findReferences"]
     },
     {
-      "before": [
-        "leader",
-        "l",
-        "c",
-        "a"
-      ],
-      "commands": [
-        "editor.action.quickFix"
-      ]
+      "before": ["leader", "l", "c", "a"],
+      "commands": ["editor.action.quickFix"]
     },
     {
-      "before": [
-        "leader",
-        "f"
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
+      "before": ["leader", "f"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": [
-        "<C-i>",
-      ],
-      "commands": [
-        "editor.action.formatDocument"
-      ]
-    },
+      "before": ["<C-i>"],
+      "commands": ["editor.action.formatDocument"]
+    }
   ],
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
     {
-      "before": [
-        "<"
-      ],
-      "commands": [
-        "editor.action.outdentLines"
-      ]
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
     },
     {
-      "before": [
-        ">"
-      ],
-      "commands": [
-        "editor.action.indentLines"
-      ]
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
     },
     // Move selected lines while staying in visual mode
     {
-      "before": [
-        "J"
-      ],
-      "commands": [
-        "editor.action.moveLinesDownAction"
-      ]
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
     },
     {
-      "before": [
-        "K"
-      ],
-      "commands": [
-        "editor.action.moveLinesUpAction"
-      ]
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
     },
     // toggle comment selection
     {
-      "before": [
-        "leader",
-        "c"
-      ],
-      "commands": [
-        "editor.action.commentLine"
-      ]
-    },
+      "before": ["leader", "c"],
+      "commands": ["editor.action.commentLine"]
+    }
   ],
-
+  "workbench.activityBar.location": "hidden"
 }
