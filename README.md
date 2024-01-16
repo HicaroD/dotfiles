@@ -13,12 +13,12 @@
 
 ## Tools
 
-| Tools                      |
-| -------------------------- |
-| Vscodium                   |
-| [Neovim][]                 |
-| Kitty (Terminal emulator)  |
-| i3 (tiling window manager) |
-| Arch Linux (Manjaro)       |
+| Tools                       |
+| --------------------------- |
+| VSCode with Vim keybindings |
+| [Neovim][]                  |
+| Kitty (Terminal emulator)   |
+| i3 (tiling window manager)  |
+| Arch Linux (Manjaro)        |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
