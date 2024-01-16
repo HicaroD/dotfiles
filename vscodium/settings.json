@@ -1,7 +1,6 @@
 {
   // Editor configuration
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.inlayHints.fontFamily": "Fantasque Sans Mono",
   "editor.fontSize": 22,
   "editor.rulers": [80],
   "editor.codeLens": false,
@@ -13,6 +12,7 @@
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
   "editor.lineNumbers": "relative",
+  "editor.inlayHints.enabled": "off",
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": false,
@@ -68,6 +68,7 @@
   "vim.useSystemClipboard": true,
   "vim.statusBarColorControl": false,
   "vim.hlsearch": true,
+  "vim.smartcase": false,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
       "before": ["<leader>", "r"],
