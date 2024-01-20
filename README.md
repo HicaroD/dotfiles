@@ -13,12 +13,13 @@
 
 ## Tools
 
-| Tools                       |
-| --------------------------- |
-| VSCode with Vim keybindings |
-| [Neovim][]                  |
-| Kitty (Terminal emulator)   |
-| i3 (tiling window manager)  |
-| Arch Linux (Manjaro)        |
+| Tools                         |
+| ----------------------------- |
+| [Neovim][]                    |
+| VSCode with Vim keybindings   |
+| Alacritty (Terminal emulator) |
+| Tmux (Terminal multiplexer)   |
+| i3 (tiling window manager)    |
+| Arch Linux (Manjaro)          |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
