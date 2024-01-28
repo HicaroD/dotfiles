@@ -42,4 +42,19 @@
     "command": "debug.setVariable",
     "when": "variablesFocused"
   },
+  {
+    "key": "ctrl+v",
+    "command": "explorer.openToSide",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  {
+    "key": "ctrl+v",
+    "command": "openside",
+    "when": "explorerViewletVisible && filesExplorerFocus"
+  },
+  // {
+  //   "key": "ctrl+v",
+  //   "command": "workbench.action.alternativeAcceptSelectedQuickOpenItem",
+  //   "when": "inQuickOpen"
+  // }
 ]

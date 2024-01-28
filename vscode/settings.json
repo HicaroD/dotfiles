@@ -1,7 +1,7 @@
 {
   // Editor configuration
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 22,
+  "editor.fontSize": 21,
   "editor.rulers": [80],
   "editor.codeLens": false,
   "editor.renderWhitespace": "none",
@@ -22,6 +22,7 @@
   "workbench.colorCustomizations": {
     "editor.background": "#181818"
   },
+  "workbench.editor.revealIfOpen": true,
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
   // Other configuration
@@ -29,7 +30,6 @@
   "files.trimTrailingWhitespace": true,
   "extensions.ignoreRecommendations": true,
   "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": -1,
   "security.workspace.trust.untrustedFiles": "open",
   "breadcrumbs.enabled": false,
   "files.trimFinalNewlines": true,
@@ -45,7 +45,15 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
-  // Typescript / Javascript
+  // HTML
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // CSS
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Typescript
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
@@ -53,14 +61,24 @@
       "source.fixAll": "explicit"
     }
   },
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "typescript.preferences.importModuleSpecifier": "relative",
+  // Javascript
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "typescript.preferences.importModuleSpecifier": "relative",
+  // JSON
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // JSON with Comments
   "[jsonc]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // Markdown
+  "[markdown]": {
+    "editor.wordWrap": "off"
   },
   // Go
   "go.toolsManagement.autoUpdate": true,
@@ -121,7 +139,6 @@
       "before": ["[", "d"],
       "commands": ["editor.action.marker.prev"]
     },
-
     {
       "before": ["]", "d"],
       "commands": ["editor.action.marker.next"]
@@ -141,6 +158,14 @@
     {
       "before": ["<C-i>"],
       "commands": ["editor.action.formatDocument"]
+    },
+    {
+      "before": ["leader", "l", "d"],
+      "commands": ["workbench.actions.view.problems"]
+    },
+    {
+      "before": ["leader", "l", "s"],
+      "commands": ["workbench.action.gotoSymbol"]
     }
   ],
   "vim.visualModeKeyBindings": [
@@ -168,5 +193,6 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
+  "window.zoomLevel": -1,
   "workbench.activityBar.location": "hidden"
 }
