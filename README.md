@@ -11,15 +11,25 @@
 
 # dotfiles
 
-## Tools
+| Major tools                       |
+| --------------------------------- |
+| [Neovim][]                        |
+| [VSCodium][] with Vim keybindings |
+| [Alacritty][] (Terminal emulator) |
+| [i3][] (tiling window manager)    |
+| Arch Linux ([Manjaro][])          |
 
-| Tools                         |
-| ----------------------------- |
-| VSCodium with Vim keybindings |
-| [Neovim][]                    |
-| Alacritty (Terminal emulator) |
-| Tmux (Terminal multiplexer)   |
-| i3 (tiling window manager)    |
-| Arch Linux (Manjaro)          |
+| Other tools                                                  |
+| ------------------------------------------------------------ |
+| [tmux][] (Terminal multiplexer)                              |
+| [gf][] (GDB frontend)                                        |
+| [Comby][] (powerful search and replace command-line utility) |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
+[VSCodium]: https://vscodium.com/
+[Alacritty]: https://alacritty.org/
+[i3]: https://i3wm.org/
+[Manjaro]: https://manjaro.org/
+[tmux]: https://github.com/tmux/tmux
+[gf]: https://github.com/nakst/gf
+[Comby]: https://comby.dev/
