@@ -15,8 +15,8 @@
 
 | Tools                         |
 | ----------------------------- |
+| VSCodium with Vim keybindings |
 | [Neovim][]                    |
-| VSCode with Vim keybindings   |
 | Alacritty (Terminal emulator) |
 | Tmux (Terminal multiplexer)   |
 | i3 (tiling window manager)    |
