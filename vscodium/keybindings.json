@@ -1,42 +1,16 @@
 [
   {
-    "key": "ctrl+d",
-    "command": "editor.action.showHover",
-    "when": "editorTextFocus"
-  },
-  {
     "key": "ctrl+shift+q",
     "command": "workbench.action.toggleActivityBarVisibility"
   },
   {
-    "key": "ctrl+e",
-    "command": "workbench.view.explorer",
-    "when": "explorerViewletVisible && editorTextFocus"
+    "key": "ctrl+shift+e",
+    "command": "workbench.action.toggleSidebarVisibility"
   },
   {
     "key": "ctrl+w",
     "command": "workbench.action.focusActiveEditorGroup",
     "when": "explorerViewletFocus"
-  },
-  {
-    "key": "alt+.",
-    "command": "editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+.",
-    "command": "-editor.action.quickFix",
-    "when": "editorHasCodeActionsProvider && editorTextFocus && !editorReadonly"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "debug.renameWatchExpression",
-    "when": "watchExpressionsFocused"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "debug.setVariable",
-    "when": "variablesFocused"
   },
   {
     "key": "ctrl+v",
@@ -47,5 +21,25 @@
     "key": "ctrl+v",
     "command": "workbench.action.alternativeAcceptSelectedQuickOpenItem",
     "when": "inQuickOpen"
+  },
+  {
+    "key": "space",
+    "command": "list.select",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "a",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "d",
+    "command": "deleteFile",
+    "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "r",
+    "command": "renameFile",
+    "when": "filesExplorerFocus && !inputFocus"
   }
 ]

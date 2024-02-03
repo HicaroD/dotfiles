@@ -31,7 +31,7 @@
   "extensions.ignoreRecommendations": true,
   "window.menuBarVisibility": "toggle",
   "security.workspace.trust.untrustedFiles": "open",
-  "breadcrumbs.enabled": false,
+  "breadcrumbs.enabled": true,
   "files.trimFinalNewlines": true,
   "explorer.sortOrder": "type",
   "explorer.confirmDragAndDrop": false,
@@ -92,8 +92,13 @@
   "vim.smartcase": false,
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": ["<leader>", "r"],
+      "before": ["leader", "r"],
       "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<c-w>"],
+      "commands": ["workbench.view.explorer"],
+      "when": "explorerViewletVisible && editorTextFocus"
     },
     {
       "before": ["K"],
@@ -122,14 +127,6 @@
       "commands": [":bnext"]
     },
     // splits
-    {
-      "before": ["leader", "v"],
-      "commands": [":vsplit"]
-    },
-    {
-      "before": ["leader", "s"],
-      "commands": [":split"]
-    },
     {
       "before": ["[", "d"],
       "commands": ["editor.action.marker.prev"]
