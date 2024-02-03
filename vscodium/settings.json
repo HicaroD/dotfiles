@@ -107,11 +107,6 @@
       "silent": true
     },
     {
-      "before": ["<leader>", "e"],
-      "commands": ["workbench.files.action.focusFilesExplorer"],
-      "when": ["editorFocus"]
-    },
-    {
       "before": ["leader", "c"],
       "commands": ["workbench.action.closeActiveEditor"],
       "silent": true
@@ -166,7 +161,7 @@
     {
       "before": ["leader", "l", "s"],
       "commands": ["workbench.action.gotoSymbol"]
-    },
+    }
   ],
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting

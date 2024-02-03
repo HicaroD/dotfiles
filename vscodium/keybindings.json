@@ -1,6 +1,6 @@
 [
   {
-    "key": "ctrl+e",
+    "key": "ctrl+d",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
@@ -9,18 +9,14 @@
     "command": "workbench.action.toggleActivityBarVisibility"
   },
   {
-    "key": "ctrl+shift+e",
-    "command": "-workbench.view.explorer"
-  },
-  {
-    "key": "ctrl+shift+e",
+    "key": "ctrl+e",
     "command": "workbench.view.explorer",
-    "when": "!explorerViewletVisible"
+    "when": "explorerViewletVisible && editorTextFocus"
   },
   {
-    "key": "ctrl+shift+e",
-    "command": "workbench.action.toggleSidebarVisibility",
-    "when": "explorerViewletVisible"
+    "key": "ctrl+w",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "explorerViewletFocus"
   },
   {
     "key": "alt+.",
@@ -51,5 +47,5 @@
     "key": "ctrl+v",
     "command": "workbench.action.alternativeAcceptSelectedQuickOpenItem",
     "when": "inQuickOpen"
-  },
+  }
 ]
