@@ -8,11 +8,11 @@
   "editor.minimap.enabled": false,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "solid",
-  "editor.cursorStyle": "line",
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
   "editor.lineNumbers": "relative",
   "editor.inlayHints.enabled": "off",
+  "editor.snippetSuggestions": "top",
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": false,
@@ -86,7 +86,6 @@
   "rust-analyzer.inlayHints.bindingModeHints.enable": true,
   // Vim
   "vim.leader": ",",
-  "vim.useSystemClipboard": true,
   "vim.statusBarColorControl": false,
   "vim.hlsearch": true,
   "vim.smartcase": false,
