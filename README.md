@@ -22,7 +22,7 @@
 | Other tools                                                  |
 | ------------------------------------------------------------ |
 | [tmux][] (Terminal multiplexer)                              |
-| [gf][] (GDB frontend)                                        |
+| [gdbgui][] (GDB GUI)                                         |
 | [Comby][] (powerful search and replace command-line utility) |
 
 [Neovim]: https://github.com/HicaroD/nvim-cfg-lua
@@ -31,5 +31,5 @@
 [i3]: https://i3wm.org/
 [Manjaro]: https://manjaro.org/
 [tmux]: https://github.com/tmux/tmux
-[gf]: https://github.com/nakst/gf
+[gdbgui]: https://www.gdbgui.com/
 [Comby]: https://comby.dev/
