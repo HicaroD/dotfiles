@@ -102,7 +102,7 @@ alias ideas="nvim ~/Documentos/Notes/ideas.md"
 alias proto="cd ~/Documentos/Prototypes"
 alias zshrc="nvim ~/.zshrc"
 alias tolearn="nvim ~/Documentos/Notes/tolearn.md"
-alias code="vscodium"
+alias vsc="vscodium"
 
 # Golang
 export PATH=$PATH:/usr/local/go/bin
@@ -163,3 +163,6 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 export PATH="$HOME/Documentos/Development/gf:$PATH"
+
+# For accessing global packages installed with Yarn
+export PATH="$(yarn global bin):$PATH"
