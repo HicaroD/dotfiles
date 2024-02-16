@@ -65,9 +65,7 @@ get_session(){
 
 exec $(get_session "$1")
 
-# TODO: make sure to properly configure my monitor with 165Hz with the correct
-# resolution (be careful with it to avoid wrong config)
-# xrandr --output DisplayPort-0 --primary --mode 1920x1080 --rate 165.0
+xrandr --output DisplayPort-0 --primary --mode 1920x1080 --rate 165.00
 
 # start i3 and keep it running
 if [ -f /usr/bin/i3 ]; then
