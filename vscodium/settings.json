@@ -1,11 +1,11 @@
 {
   // Editor configuration
   "editor.fontFamily": "Fantasque Sans Mono",
-  "editor.fontSize": 21,
+  "editor.fontSize": 22,
   "editor.rulers": [80],
   "editor.codeLens": false,
   "editor.renderWhitespace": "none",
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "solid",
   "editor.autoClosingBrackets": "never",
@@ -59,14 +59,17 @@
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit",
       "source.fixAll": "explicit"
-    }
+    },
+    "typescript.preferences.importModuleSpecifier": "relative"
   },
   "typescript.updateImportsOnFileMove.enabled": "always",
   "typescript.preferences.importModuleSpecifier": "relative",
   // Javascript
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "javascript.preferences.importModuleSpecifier": "relative"
   },
+  "eslint.validate": ["javascript"],
   "javascript.updateImportsOnFileMove.enabled": "always",
   // JSON
   "[json]": {
@@ -101,6 +104,12 @@
     },
     {
       "before": ["K"],
+      "commands": ["editor.action.showHover"],
+      "silent": true,
+      "when": "editorTextFocus"
+    },
+    {
+      "before": ["leader", "e"],
       "commands": ["editor.action.showHover"],
       "silent": true,
       "when": "editorTextFocus"
@@ -157,7 +166,11 @@
     {
       "before": ["leader", "l", "s"],
       "commands": ["workbench.action.gotoSymbol"]
-    }
+    },
+    {
+      "before": ["/"],
+      "commands": ["actions.find"]
+    },
   ],
   "vim.visualModeKeyBindings": [
     // Stay in visual mode while indenting
