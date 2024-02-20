@@ -13,23 +13,23 @@
 
 | Major tools                       |
 | --------------------------------- |
-| [Neovim][]                        |
-| [VSCodium][] with Vim keybindings |
-| [Alacritty][] (Terminal emulator) |
+| [neovim][] (Main text editor)     |
+| [vscodium][] with Vim keybindings |
+| [alacritty][] (terminal emulator) |
 | [i3][] (tiling window manager)    |
-| Arch Linux ([Manjaro][])          |
+| Arch Linux ([manjaro][])          |
 
 | Other tools                                                  |
 | ------------------------------------------------------------ |
-| [tmux][] (Terminal multiplexer)                              |
+| [tmux][] (terminal multiplexer)                              |
 | [gdbgui][] (GDB GUI)                                         |
-| [Comby][] (powerful search and replace command-line utility) |
+| [comby][] (powerful search and replace command-line utility) |
 
-[Neovim]: https://github.com/HicaroD/nvim-cfg-lua
-[VSCodium]: https://vscodium.com/
-[Alacritty]: https://alacritty.org/
+[neovim]: https://github.com/HicaroD/nvim-cfg-lua
+[vscodium]: https://vscodium.com/
+[alacritty]: https://alacritty.org/
 [i3]: https://i3wm.org/
-[Manjaro]: https://manjaro.org/
+[manjaro]: https://manjaro.org/
 [tmux]: https://github.com/tmux/tmux
 [gdbgui]: https://www.gdbgui.com/
-[Comby]: https://comby.dev/
+[comby]: https://comby.dev/
