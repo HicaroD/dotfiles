@@ -14,7 +14,7 @@
 | Major tools                       |
 | --------------------------------- |
 | [neovim][] (Main text editor)     |
-| [vscodium][] with Vim keybindings |
+| [vscode][] with Vim keybindings   |
 | [alacritty][] (terminal emulator) |
 | [i3][] (tiling window manager)    |
 | Arch Linux ([manjaro][])          |
@@ -26,7 +26,7 @@
 | [comby][] (powerful search and replace command-line utility) |
 
 [neovim]: https://github.com/HicaroD/nvim-cfg-lua
-[vscodium]: https://vscodium.com/
+[vscode]: https://code.visualstudio.com/
 [alacritty]: https://alacritty.org/
 [i3]: https://i3wm.org/
 [manjaro]: https://manjaro.org/
