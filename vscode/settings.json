@@ -15,7 +15,6 @@
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   // Workbench
-  "workbench.list.smoothScrolling": true,
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
