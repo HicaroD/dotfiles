@@ -105,8 +105,6 @@ alias tolearn="nvim ~/Documentos/Notes/tolearn.md"
 alias vsc="vscodium"
 alias tmuxfzf="~/fzf_tmux.sh"
 
-# Golang
-export PATH=$PATH:/usr/local/go/bin
 
 # Mesa digitalizadora
 alias mesaconfig="cd ~ && ./mesaconfig"
@@ -156,8 +154,6 @@ calendar() {
 
 [ -f "/home/hicaro/.ghcup/env" ] && source "/home/hicaro/.ghcup/env" # ghcup-env
 
-export PATH="$PATH:~/Documentos/Development/clang_llvm_9.0.0/bin"
-
 # Pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
@@ -167,3 +163,7 @@ export PATH="$HOME/Documentos/Development/gf:$PATH"
 
 # For accessing global packages installed with Yarn
 export PATH="$(yarn global bin):$PATH"
+
+# Golang
+export PATH="/usr/local/go/bin:$PATH"
+export GOBIN=/usr/local/go/bin/
