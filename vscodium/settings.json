@@ -6,13 +6,14 @@
   "editor.codeLens": false,
   "editor.renderWhitespace": "none",
   "editor.minimap.enabled": true,
-  "editor.cursorSmoothCaretAnimation": "on",
   "editor.cursorBlinking": "solid",
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
   "editor.lineNumbers": "relative",
   "editor.inlayHints.enabled": "off",
   "editor.snippetSuggestions": "top",
+  "editor.smoothScrolling": true,
+  "editor.cursorSmoothCaretAnimation": "on",
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": false,
@@ -96,11 +97,6 @@
     {
       "before": ["leader", "r"],
       "commands": ["editor.action.rename"]
-    },
-    {
-      "before": ["<c-w>"],
-      "commands": ["workbench.view.explorer"],
-      "when": "explorerViewletVisible && editorTextFocus"
     },
     {
       "before": ["K"],
@@ -197,6 +193,5 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
-  "window.zoomLevel": -1,
-  "workbench.activityBar.location": "hidden"
+  "window.zoomLevel": -1
 }
