@@ -166,4 +166,4 @@ export PATH="$(yarn global bin):$PATH"
 
 # Golang
 export PATH="/usr/local/go/bin:$PATH"
-export GOBIN=/usr/local/go/bin/
+export PATH="$(go env GOPATH)/bin:$PATH"
