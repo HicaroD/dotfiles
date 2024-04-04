@@ -41,7 +41,6 @@
 ```
 sudo pacman -S yay # for installing packages from AUR
 sudo pacman -S flameshot # for screenshots
-yay anki # for english practice
 ```
 
 - Window manager
