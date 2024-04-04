@@ -5,7 +5,7 @@
   "editor.rulers": [80],
   "editor.codeLens": false,
   "editor.renderWhitespace": "none",
-  "editor.minimap.enabled": false,
+  "editor.minimap.enabled": true,
   "editor.cursorBlinking": "solid",
   "editor.autoClosingBrackets": "never",
   "editor.autoClosingQuotes": "never",
@@ -97,11 +97,6 @@
     {
       "before": ["leader", "r"],
       "commands": ["editor.action.rename"]
-    },
-    {
-      "before": ["<c-w>"],
-      "commands": ["workbench.view.explorer"],
-      "when": "explorerViewletVisible && editorTextFocus"
     },
     {
       "before": ["K"],
@@ -198,6 +193,5 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
-  "window.zoomLevel": -1,
-  "workbench.activityBar.location": "hidden"
+  "window.zoomLevel": -1
 }
