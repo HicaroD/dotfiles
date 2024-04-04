@@ -154,11 +154,6 @@ calendar() {
 
 [ -f "/home/hicaro/.ghcup/env" ] && source "/home/hicaro/.ghcup/env" # ghcup-env
 
-# Pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-
 export PATH="$HOME/Documentos/Development/gf:$PATH"
 
 # For accessing global packages installed with Yarn

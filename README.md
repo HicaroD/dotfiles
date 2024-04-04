@@ -33,3 +33,47 @@
 [tmux]: https://github.com/tmux/tmux
 [gdbgui]: https://www.gdbgui.com/
 [comby]: https://comby.dev/
+
+## Packages
+
+- Linux
+
+```
+sudo pacman -S yay # for installing packages from AUR
+```
+
+- Window manager
+
+```
+sudo pacman -S i3-wm i3status
+```
+
+- Monitor
+
+```
+sudo pacman -S xorg-xrandr xorg-xinput
+```
+
+- Development
+
+```
+sudo pacman -S alacritty
+```
+
+```
+sudo pacman -S neovim ripgrep
+```
+
+```
+sudo pacman -S nodejs npm
+npm install -g emmet-ls # Emmet
+
+go install github.com/nametake/golangci-lint-langserver@latest # Golang
+go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest # Golang
+
+npm install -g pyright # Python
+```
+
+```
+sudo pacman -S tmux
+```
