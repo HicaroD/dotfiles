@@ -16,12 +16,9 @@
 | [neovim][] (Main text editor)                         |
 | [vscode][] with Vim keybinding (mostly for debugging) |
 | [alacritty][] (terminal emulator)                     |
+| [tmux][] (terminal multiplexer) |
 | [i3][] (tiling window manager)                        |
 | Arch Linux ([manjaro][])                              |
-
-| Other tools                     |
-| ------------------------------- |
-| [tmux][] (terminal multiplexer) |
 
 [neovim]: https://github.com/HicaroD/nvim-cfg-lua
 [vscode]: https://code.visualstudio.com/
