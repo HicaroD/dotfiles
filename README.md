@@ -38,7 +38,7 @@
 
 - Linux
 
-```
+```bash
 sudo pacman -S yay # for installing packages from AUR
 sudo pacman -S flameshot # for screenshots
 sudo pacman -S xclip # tool for copying thins to the clipboard (useful for Neovim as well)
@@ -48,31 +48,31 @@ yay anki # for english practice through cards
 
 - Window manager
 
-```
+```bash
 sudo pacman -S i3-wm i3status
 mkdir -p ~/.config/i3/i3config && ln ./i3/config ~/.config/i3 && ln ./i3/i3status/config ~/.config/i3/i3status/
 ```
 
 - Monitor
 
-```
+```bash
 sudo pacman -S xorg-xrandr xorg-xinput
 ln .xinitrc ~
 ```
 
 - Development
 
-```
+```bash
 sudo pacman -S alacritty
 mkdir ~/.config/alacritty && ln ./alacritty/alacritty.toml ~/.config/alacritty
 ```
 
-```
+```bash
 sudo pacman -S neovim ripgrep
 git clone https://github.com/HicaroD/nvim-cfg-lua ~/.config/nvim
 ```
 
-```
+```bash
 sudo pacman -S nodejs npm
 npm install -g emmet-ls # emmet
 
@@ -82,7 +82,7 @@ go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest # Golang
 npm install -g pyright # Python
 ```
 
-```
+```bash
 sudo pacman -S tmux
 ln ./tmux/.tmux.conf ~
 ```
