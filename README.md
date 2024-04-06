@@ -41,6 +41,8 @@
 ```
 sudo pacman -S yay # for installing packages from AUR
 sudo pacman -S flameshot # for screenshots
+sudo pacman -S make patch # Other packages
+yay anki
 ```
 
 - Window manager
