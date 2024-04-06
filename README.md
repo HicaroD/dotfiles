@@ -41,7 +41,8 @@
 ```
 sudo pacman -S yay # for installing packages from AUR
 sudo pacman -S flameshot # for screenshots
-sudo pacman -S make patch # Other packages
+sudo pacman -S xclip # tool for copying thins to the clipboard (useful for Neovim as well)
+sudo pacman -S make patch # Necessary for installing other packages
 yay anki
 ```
 
