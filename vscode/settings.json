@@ -14,6 +14,9 @@
   "editor.snippetSuggestions": "top",
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
+  "editor.formatOnSave": false,
+  // Telemetry (always disabled!)
+  "telemetry.telemetryLevel": "off",
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": false,
@@ -193,5 +196,6 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
-  "window.zoomLevel": -1
+  "window.zoomLevel": -1,
+  "workbench.activityBar.location": "hidden",
 }
