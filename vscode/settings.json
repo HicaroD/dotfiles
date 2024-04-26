@@ -27,9 +27,11 @@
     "editor.background": "#181818"
   },
   "workbench.editor.revealIfOpen": true,
+  "workbench.activityBar.location": "bottom",
+  "workbench.layoutControl.enabled": false,
+  // Other configuration
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
-  // Other configuration
   "search.searchOnType": true,
   "files.trimTrailingWhitespace": true,
   "extensions.ignoreRecommendations": true,
@@ -44,7 +46,9 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
+  // Terminal
   "terminal.integrated.fontSize": 19,
+  "terminal.integrated.gpuAcceleration": "off",
   // Python
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
@@ -155,6 +159,10 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
+      "before": ["leader", "t"],
+      "commands": ["workbench.action.terminal.toggleTerminal"]
+    },
+    {
       "before": ["<C-i>"],
       "commands": ["editor.action.formatDocument"]
     },
@@ -197,5 +205,6 @@
     }
   ],
   "window.zoomLevel": -1,
-  "workbench.activityBar.location": "hidden",
+  "window.commandCenter": false,
+  "window.customTitleBarVisibility": "never",
 }

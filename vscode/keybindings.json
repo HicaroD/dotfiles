@@ -4,12 +4,12 @@
     "command": "workbench.action.toggleActivityBarVisibility"
   },
   {
-    "key": "ctrl+e",
+    "key": "ctrl+f",
     "command": "workbench.action.toggleSidebarVisibility",
      "when": "explorerViewletFocus"
   },
   {
-    "key": "ctrl+e",
+    "key": "ctrl+f",
     "command": "workbench.action.toggleSidebarVisibility",
      "when": "editorFocus"
   },
@@ -52,5 +52,10 @@
     "key": "r",
     "command": "renameFile",
     "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "-workbench.view.explorer",
+    "when": "viewContainer.workbench.view.explorer.enabled"
   }
 ]
