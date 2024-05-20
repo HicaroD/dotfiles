@@ -104,6 +104,7 @@ alias zshrc="nvim ~/.zshrc"
 alias tolearn="nvim ~/Documentos/Notes/tolearn.md"
 alias vsc="vscodium"
 alias tmuxfzf="~/fzf_tmux.sh"
+alias gpo="git push origin"
 
 
 # Mesa digitalizadora
@@ -111,9 +112,6 @@ alias mesaconfig="cd ~ && ./mesaconfig"
 
 # Neovim
 alias vi="nvim"
-
-# Flutter
-export PATH=/home/hicaro/Documentos/Development/flutter/bin:$PATH
 
 # Java
 export PATH="$PATH:/usr/bin/java"
@@ -162,3 +160,7 @@ export PATH="$(yarn global bin):$PATH"
 # Golang
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="$(go env GOPATH)/bin:$PATH"
+export PATH=~/.local/bin:"$PATH"
+
+# Flutter
+export PATH="$HOME/Documentos/Development/flutter/bin:$PATH"
