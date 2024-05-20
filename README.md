@@ -36,7 +36,7 @@
 ```bash
 sudo pacman -S yay # for installing packages from AUR
 sudo pacman -S flameshot # for screenshots
-sudo pacman -S xclip # tool for copying thins to the clipboard (useful for Neovim as well)
+sudo pacman -S xclip # tool for copying things to the clipboard (useful for Neovim as well)
 sudo pacman -S make patch # Necessary for installing other packages
 yay anki # for english practice through cards
 yay comby-bin # a really powerful search and replace
