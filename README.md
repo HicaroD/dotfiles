@@ -16,13 +16,15 @@
 | [neovim][] (Main text editor)                         |
 | [vscode][] with Vim keybinding (mostly for debugging) |
 | [alacritty][] (terminal emulator)                     |
-| [tmux][] (terminal multiplexer) |
+| [comby][] (search and change code structure tool)     |
+| [tmux][] (terminal multiplexer)                       |
 | [i3][] (tiling window manager)                        |
 | Arch Linux ([manjaro][])                              |
 
 [neovim]: https://github.com/HicaroD/nvim-cfg-lua
 [vscode]: https://code.visualstudio.com/
 [alacritty]: https://alacritty.org/
+[comby]: https://comby.dev/
 [i3]: https://i3wm.org/
 [manjaro]: https://manjaro.org/
 [tmux]: https://github.com/tmux/tmux
@@ -37,6 +39,7 @@ sudo pacman -S flameshot # for screenshots
 sudo pacman -S xclip # tool for copying thins to the clipboard (useful for Neovim as well)
 sudo pacman -S make patch # Necessary for installing other packages
 yay anki # for english practice through cards
+yay comby-bin # a really powerful search and replace
 ```
 
 - Window manager
