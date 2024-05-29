@@ -206,5 +206,7 @@
   ],
   "window.zoomLevel": -1,
   "window.commandCenter": false,
-  "window.customTitleBarVisibility": "never",
+  "window.customTitleBarVisibility": "auto",
+  "C_Cpp.default.compilerPath": "/usr/bin/g++",
+  "C_Cpp.intelliSenseEngine": "disabled",
 }
