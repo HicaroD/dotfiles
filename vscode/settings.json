@@ -46,6 +46,7 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
+  "update.mode": "none",
   // Terminal
   "terminal.integrated.fontSize": 19,
   "terminal.integrated.gpuAcceleration": "off",
