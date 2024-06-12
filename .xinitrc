@@ -65,7 +65,7 @@ get_session(){
 
 exec $(get_session "$1")
 
-xrandr --output DisplayPort-0 --primary --mode 1920x1080 --rate 165.00
+xrandr --output HDMI-1 --primary --mode 1920x1080 --rate 144.00
 
 # start i3 and keep it running
 if [ -f /usr/bin/i3 ]; then
