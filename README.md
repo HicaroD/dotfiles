@@ -62,6 +62,7 @@ sudo pacman -S python
 ```bash
 sudo pacman -S i3-wm i3status
 mkdir -p ~/.config/i3/i3config/ && ln ./i3/config ~/.config/i3 && ln ./i3/i3status/config ~/.config/i3/i3status/
+sudo pacman -S dmenu # for opening programs easily on i3
 ```
 
 - Monitor
