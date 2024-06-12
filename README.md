@@ -37,16 +37,31 @@
 sudo pacman -S yay # for installing packages from AUR
 sudo pacman -S flameshot # for screenshots
 sudo pacman -S xclip # tool for copying things to the clipboard (useful for Neovim as well)
-sudo pacman -S make patch # Necessary for installing other packages
+sudo pacman -S make patch wget # Necessary for installing other packages
 yay anki # for english practice through cards
 yay comby-bin # a really powerful search and replace
+```
+
+- Terminal
+
+```bash
+sudo pacman -S zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+rm ~/.zshrc && ln ./zsh/.zshrc ~
+```
+
+- Languages
+
+```
+sudo pacman -S python
+# See https://go.dev/doc/install for Golang
 ```
 
 - Window manager
 
 ```bash
 sudo pacman -S i3-wm i3status
-mkdir -p ~/.config/i3/i3config && ln ./i3/config ~/.config/i3 && ln ./i3/i3status/config ~/.config/i3/i3status/
+mkdir -p ~/.config/i3/i3config/ && ln ./i3/config ~/.config/i3 && ln ./i3/i3status/config ~/.config/i3/i3status/
 ```
 
 - Monitor
