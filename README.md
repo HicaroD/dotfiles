@@ -95,6 +95,7 @@ sudo pacman -S nodejs npm
 npm install -g emmet-ls # emmet
 npm install -g prettier # prettier for code formatting
 
+go install golang.org/x/tools/gopls@latest # Golang
 go install github.com/nametake/golangci-lint-langserver@latest # Golang
 go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest # Golang
 
