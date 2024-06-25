@@ -99,7 +99,7 @@ go install golang.org/x/tools/gopls@latest # Golang
 go install github.com/nametake/golangci-lint-langserver@latest # Golang
 go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest # Golang
 
-npm install -g pyright # Python
+sudo pacman -S stylua # Code formatter for Lua
 ```
 
 ```bash
