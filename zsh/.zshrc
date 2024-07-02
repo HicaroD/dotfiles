@@ -106,10 +106,8 @@ alias vsc="vscodium"
 alias tmuxfzf="~/fzf_tmux.sh"
 alias gpo="git push origin"
 alias code="vscodium"
-
-
-# Mesa digitalizadora
-alias mesaconfig="cd ~ && ./mesaconfig"
+alias gmt="git mergetool --tool=neovim"
+alias lg="lazygit"
 
 # Neovim
 alias vi="nvim"
@@ -120,7 +118,6 @@ export JAVA_HOME=/home/hicaro/Documentos/Development/android-studio/jbr
 export PATH=$PATH:$JAVA_HOME/bin
 
 export PATH=$PATH:/opt/discord
-export PATH="$PATH:/home/hicaro/Android/Sdk"
 
 # Dart
 export PATH="$PATH":"$HOME/.pub-cache/bin"
@@ -165,3 +162,4 @@ export PATH=~/.local/bin:"$PATH"
 
 # Flutter
 export PATH="$HOME/Documentos/Development/flutter/bin:$PATH"
+
