@@ -59,6 +59,10 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 rm ~/.zshrc && ln ./zsh/.zshrc ~
 ```
 
+```bash
+mkdir ~/.config/alacritty && ln ./alacritty/alacritty.toml ~/.config/alacritty
+```
+
 - Languages
 
 ```
@@ -70,7 +74,7 @@ sudo pacman -S python
 
 ```bash
 sudo pacman -S i3-wm i3status
-mkdir -p ~/.config/i3/i3config/ && ln ./i3/config ~/.config/i3 && ln ./i3/i3status/config ~/.config/i3/i3status/
+mkdir -p ~/.config/i3/i3status/ && ln ./i3/config ~/.config/i3 && ln ./i3/i3status/config ~/.config/i3/i3status/
 sudo pacman -S dmenu # for opening programs easily on i3
 ```
 
@@ -88,11 +92,6 @@ ln .xinitrc ~
 ```
 
 - Development
-
-```bash
-sudo pacman -S alacritty
-mkdir ~/.config/alacritty && ln ./alacritty/alacritty.toml ~/.config/alacritty
-```
 
 ```bash
 sudo pacman -S neovim ripgrep
