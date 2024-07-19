@@ -45,6 +45,7 @@ yay comby-bin # a really powerful search and replace
 - Terminal
 
 ```bash
+sudo pacman -S alacritty
 sudo pacman -S zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm ~/.zshrc && ln ./zsh/.zshrc ~
