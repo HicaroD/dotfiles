@@ -42,6 +42,14 @@ yay anki # for english practice through cards
 yay comby-bin # a really powerful search and replace
 ```
 
+- Git
+
+```bash
+git config --global user.email "..."
+git config --global user.name "..."
+git config --global core.editor "nvim"
+```
+
 - Terminal
 
 ```bash
