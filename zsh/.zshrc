@@ -96,6 +96,7 @@ source $ZSH/oh-my-zsh.sh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 alias notes="nvim ~/Documentos/Notes/"
+alias today="nvim ~/Documentos/Notes/today.md"
 alias words="nvim ~/Documentos/Notes/words.md"
 alias proj="cd ~/Documentos/Projects"
 alias ideas="nvim ~/Documentos/Notes/ideas.md"
