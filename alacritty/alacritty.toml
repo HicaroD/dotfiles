@@ -32,15 +32,15 @@ term = "xterm-256color"
 size = 15
 
 [font.bold]
-family = "Fantasque Sans Mono"
+family = "FantasqueSansM Nerd Font"
 style = "Bold"
 
 [font.italic]
-family = "Fantasque Sans Mono"
+family = "FantasqueSansM Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "Fantasque Sans Mono"
+family = "FantasqueSansM Nerd Font"
 style = "Regular"
 
 [mouse]
