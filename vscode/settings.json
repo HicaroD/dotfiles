@@ -1,6 +1,6 @@
 {
   // Editor configuration
-  "editor.fontFamily": "Fantasque Sans Mono",
+  "editor.fontFamily": "FantasqueSansM Nerd Font",
   "editor.fontSize": 22,
   "editor.rulers": [80],
   "editor.codeLens": false,
@@ -14,9 +14,6 @@
   "editor.snippetSuggestions": "top",
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.formatOnSave": false,
-  // Telemetry (always disabled!)
-  "telemetry.telemetryLevel": "off",
   // Workbench
   "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": false,
@@ -27,11 +24,9 @@
     "editor.background": "#181818"
   },
   "workbench.editor.revealIfOpen": true,
-  "workbench.activityBar.location": "bottom",
-  "workbench.layoutControl.enabled": false,
-  // Other configuration
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
+  // Other configuration
   "search.searchOnType": true,
   "files.trimTrailingWhitespace": true,
   "extensions.ignoreRecommendations": true,
@@ -46,10 +41,7 @@
   "extensions.experimental.affinity": {
     "vscodevim.vim": 1
   },
-  "update.mode": "none",
-  // Terminal
   "terminal.integrated.fontSize": 19,
-  "terminal.integrated.gpuAcceleration": "off",
   // Python
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
@@ -160,10 +152,6 @@
       "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": ["leader", "t"],
-      "commands": ["workbench.action.terminal.toggleTerminal"]
-    },
-    {
       "before": ["<C-i>"],
       "commands": ["editor.action.formatDocument"]
     },
@@ -206,8 +194,6 @@
     }
   ],
   "window.zoomLevel": -1,
-  "window.commandCenter": false,
-  "window.customTitleBarVisibility": "auto",
-  "C_Cpp.default.compilerPath": "/usr/bin/g++",
-  "C_Cpp.intelliSenseEngine": "disabled",
+  "terminal.integrated.gpuAcceleration": "on",
+  "workbench.activityBar.location": "hidden"
 }

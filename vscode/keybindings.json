@@ -1,22 +1,16 @@
 [
   {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
     "key": "ctrl+shift+q",
     "command": "workbench.action.toggleActivityBarVisibility"
   },
   {
-    "key": "ctrl+e",
-    "command": "workbench.action.toggleSidebarVisibility",
-     "when": "editorFocus && explorerViewletVisible"
-  },
-  {
-    "key": "ctrl+e",
-    "command": "workbench.files.action.focusFilesExplorer",
-     "when": "editorFocus && !explorerViewletVisible"
-  },
-  {
-    "key": "ctrl+e",
-    "command": "workbench.action.toggleSidebarVisibility",
-     "when": "!editorFocus && explorerViewletVisible"
+    "key": "ctrl+shift+e",
+    "command": "workbench.action.focusActiveEditorGroup",
+     "when": "explorerViewletFocus"
   },
   {
     "key": "ctrl+v",
@@ -47,10 +41,5 @@
     "key": "r",
     "command": "renameFile",
     "when": "filesExplorerFocus && !inputFocus"
-  },
-  {
-    "key": "ctrl+shift+e",
-    "command": "-workbench.view.explorer",
-    "when": "viewContainer.workbench.view.explorer.enabled"
   }
 ]
