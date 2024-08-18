@@ -1,5 +1,9 @@
 [
   {
+    "key": "ctrl+b",
+    "command": "workbench.action.toggleSidebarVisibility"
+  },
+  {
     "key": "ctrl+shift+q",
     "command": "workbench.action.toggleActivityBarVisibility"
   },
