@@ -106,7 +106,6 @@ alias tolearn="nvim ~/Documentos/Notes/tolearn.md"
 alias vsc="vscodium"
 alias tmuxfzf="~/fzf_tmux.sh"
 alias gpo="git push origin"
-alias code="vscodium"
 alias gmt="git mergetool --tool=neovim"
 alias lg="lazygit"
 
