@@ -35,11 +35,12 @@
 - Linux
 
 ```bash
-sudo pacman -S yay # for installing packages from AUR
-sudo pacman -S flameshot # for screenshots
-sudo pacman -S xclip # tool for copying things to the clipboard (useful for Neovim as well)
-sudo pacman -S make patch wget cmake ninja clang base-devel # Necessary for installing other packages
-sudo pacman -S lsof # Useful for understanding open files used by processes
+sudo pacman -S yay # for installing packages from AUR.
+sudo pacman -S flameshot # for screenshots.
+sudo pacman -S xclip # tool for copying things to the clipboard (useful for Neovim as well).
+sudo pacman -S make patch wget cmake ninja clang base-devel # Necessary for installing other packages.
+sudo pacman -S lsof # Useful for understanding open files used by processes.
+sudo pacman -S btop # Alternative to htop for monitoring resources.
 yay anki # for english practice through cards
 yay comby-bin # a really powerful search and replace
 ```
