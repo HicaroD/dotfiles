@@ -108,6 +108,7 @@ npm install -g emmet-ls # emmet
 npm install -g prettier # prettier for code formatting
 npm i -g vscode-langservers-extracted # HTML, CSS, JSON, ESLint and more
 npm install -g typescript typescript-language-server # Typescript
+npm install -g @tailwindcss/language-server # LSP support for Tailwind
 
 go install golang.org/x/tools/gopls@latest # Golang
 go install github.com/nametake/golangci-lint-langserver@latest # Golang
