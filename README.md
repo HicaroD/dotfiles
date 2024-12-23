@@ -31,7 +31,6 @@
 
 ## Packages
 
-
 - Linux
 
 ```bash
@@ -109,12 +108,15 @@ npm install -g prettier # prettier for code formatting
 npm i -g vscode-langservers-extracted # HTML, CSS, JSON, ESLint and more
 npm install -g typescript typescript-language-server # Typescript
 npm install -g @tailwindcss/language-server # LSP support for Tailwind
+npm install -g svelte-language-server # LSP support for Svelte
 
 go install golang.org/x/tools/gopls@latest # Golang
 go install github.com/nametake/golangci-lint-langserver@latest # Golang
 go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest # Golang
 
 sudo pacman -S stylua # Code formatter for Lua
+
+sudo pacman -S serpl # Search & Replace TUI (similar to VSCode)
 ```
 
 ```bash

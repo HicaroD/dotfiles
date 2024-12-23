@@ -163,3 +163,5 @@ export PATH=~/.local/bin:"$PATH"
 # Flutter
 export PATH="$HOME/Documentos/Development/flutter/bin:$PATH"
 
+# elixir-ls
+export PATH="$HOME/Documentos/Dev/elixir-ls:$PATH"
