@@ -50,6 +50,7 @@ yay comby-bin # a really powerful search and replace
 git config --global user.email "..."
 git config --global user.name "..."
 git config --global core.editor "nvim"
+git config --global url.ssh://git@github.com/.insteadOf https://github.com/ # always use ssh
 ```
 
 - Terminal
