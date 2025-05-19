@@ -165,3 +165,23 @@ export PATH="$HOME/Documentos/Development/flutter/bin:$PATH"
 
 # elixir-ls
 export PATH="$HOME/Documentos/Dev/elixir-ls:$PATH"
+
+# pnpm
+export PNPM_HOME="/home/hicro/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+
+# Direnv
+eval "$(direnv hook zsh)"
+
+# Corepack (you are annoying)
+export COREPACK_ENABLE_AUTO_PIN=0
+
+# VPS
+alias hicaro.space="ssh -i ~/.ssh/hicaro.space root@5.161.229.166"
+
+# Personal keys
+source ~/.keys
