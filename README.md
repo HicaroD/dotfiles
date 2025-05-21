@@ -15,7 +15,7 @@
 | ----------------------------------------------------- |
 | [neovim][] (Main text editor)                         |
 | [vscode][] with Vim keybinding (mostly for debugging) |
-| [alacritty][] (terminal emulator)                     |
+| [kitty][] (terminal emulator)                     |
 | [comby][] (search and change code structure tool)     |
 | [tmux][] (terminal multiplexer)                       |
 | [i3][] (tiling window manager)                        |
@@ -23,7 +23,7 @@
 
 [neovim]: https://github.com/HicaroD/nvim-cfg-lua
 [vscode]: https://code.visualstudio.com/
-[alacritty]: https://alacritty.org/
+[kitty]: https://sw.kovidgoyal.net/kitty/
 [comby]: https://comby.dev/
 [i3]: https://i3wm.org/
 [manjaro]: https://manjaro.org/
@@ -56,14 +56,14 @@ git config --global url.ssh://git@github.com/.insteadOf https://github.com/ # al
 - Terminal
 
 ```bash
-sudo pacman -S alacritty
+sudo pacman -S kitty
 sudo pacman -S zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm ~/.zshrc && ln ./zsh/.zshrc ~
 ```
 
 ```bash
-mkdir ~/.config/alacritty && ln ./alacritty/alacritty.toml ~/.config/alacritty
+mkdir ~/.config/kitty && ln ./kitty/kitty.conf ~/.config/kitty
 ```
 
 - Languages
