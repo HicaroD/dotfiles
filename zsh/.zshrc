@@ -152,9 +152,6 @@ calendar() {
 
 export PATH="$HOME/Documentos/Development/gf:$PATH"
 
-# For accessing global packages installed with Yarn
-export PATH="$(yarn global bin):$PATH"
-
 # Golang
 export PATH="/usr/local/go/bin:$PATH"
 export PATH="$(go env GOPATH)/bin:$PATH"

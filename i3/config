@@ -162,7 +162,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
     position top
-    font pango:FantasqueSansM NerdFont 11
+    font pango:Fantasque Sans Mono 11
     status_command i3status --config ~/.config/i3/i3status/config
 }
 
