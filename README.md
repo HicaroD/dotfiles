@@ -103,6 +103,7 @@ git clone https://github.com/HicaroD/nvim-cfg-lua ~/.config/nvim
 
 ```bash
 sudo pacman -S nodejs npm # npm for installing packages
+curl -fsSL https://get.pnpm.io/install.sh | sh - # pnpm for development
 npm install -g pyright # pyright
 npm install -g emmet-ls # emmet
 npm install -g prettier # prettier for code formatting
