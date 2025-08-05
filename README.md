@@ -42,6 +42,7 @@ sudo pacman -S lsof # Useful for understanding open files used by processes.
 sudo pacman -S btop # Alternative to htop for monitoring resources.
 sudo pacman -S pavucontrol # For controlling audio volume.
 sudo pacman -S ssh-pass # For managing ssh keys.
+sudo pacman -S jq # For working with JSON objects in the command line.
 yay anki # for english practice through cards
 yay comby-bin # a really powerful search and replace
 ```
