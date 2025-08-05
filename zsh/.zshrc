@@ -108,6 +108,7 @@ alias tmuxfzf="~/fzf_tmux.sh"
 alias gpo="git push origin"
 alias gmt="git mergetool --tool=neovim"
 alias lg="lazygit"
+alias randomkey="openssl rand -hex 32"
 
 # Neovim
 alias vi="nvim"
@@ -178,7 +179,11 @@ eval "$(direnv hook zsh)"
 export COREPACK_ENABLE_AUTO_PIN=0
 
 # VPS
-alias hicaro.space="ssh -i ~/.ssh/hicaro.space root@5.161.229.166"
+alias hicaro.space="ssh -i ~/.ssh/hicaro.space root@91.99.193.146"
 
 # Personal keys
 source ~/.keys
+
+alias sonoria1="ssh -i ~/.ssh/hicaro-sonoria -p 60000 hicaro_silva@200.133.123.136"
+alias sonoria2="ssh -i ~/.ssh/hicaro-sonoria -p 60001 hicaro_silva@200.133.123.136"
+export PATH="$HOME/.spin/bin:$PATH"
