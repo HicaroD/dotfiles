@@ -187,3 +187,6 @@ source ~/.keys
 alias sonoria1="ssh -i ~/.ssh/hicaro-sonoria -p 60000 hicaro_silva@200.133.123.136"
 alias sonoria2="ssh -i ~/.ssh/hicaro-sonoria -p 60001 hicaro_silva@200.133.123.136"
 export PATH="$HOME/.spin/bin:$PATH"
+
+# opencode
+export PATH=/home/hicro/.opencode/bin:$PATH
