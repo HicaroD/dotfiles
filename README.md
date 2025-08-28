@@ -15,7 +15,7 @@
 | ----------------------------------------------------- |
 | [neovim][] (Main text editor)                         |
 | [vscode][] with Vim keybinding (mostly for debugging) |
-| [kitty][] (terminal emulator)                     |
+| [kitty][] (terminal emulator)                         |
 | [comby][] (search and change code structure tool)     |
 | [tmux][] (terminal multiplexer)                       |
 | [i3][] (tiling window manager)                        |
@@ -122,6 +122,8 @@ go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest # Golang
 sudo pacman -S stylua # Code formatter for Lua
 
 sudo pacman -S serpl # Search & Replace TUI (similar to VSCode)
+
+curl -fsSL https://opencode.ai/install | bash # OpenCode - https://opencode.ai/
 ```
 
 ```bash
