@@ -81,12 +81,11 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='nvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -108,14 +107,17 @@ alias tmuxfzf="~/fzf_tmux.sh"
 alias gpo="git push origin"
 alias gmt="git mergetool --tool=neovim"
 alias lg="lazygit"
-alias randomkey="openssl rand -hex 32"
+alias randomkey="openssl rand -hex 50"
 
 # Neovim
 alias vi="nvim"
 
+# Vscode
+alias c="code"
+
 # Java
 export PATH="$PATH:/usr/bin/java"
-export JAVA_HOME=/home/hicaro/Documentos/Development/android-studio/jbr
+export JAVA_HOME=/usr/lib/jvm/java-24-openjdk
 export PATH=$PATH:$JAVA_HOME/bin
 
 export PATH=$PATH:/opt/discord
@@ -159,7 +161,7 @@ export PATH="$(go env GOPATH)/bin:$PATH"
 export PATH=~/.local/bin:"$PATH"
 
 # Flutter
-export PATH="$HOME/Documentos/Development/flutter/bin:$PATH"
+export PATH="$HOME/Documentos/Dev/flutter/bin:$PATH"
 
 # elixir-ls
 export PATH="$HOME/Documentos/Dev/elixir-ls:$PATH"
@@ -190,3 +192,19 @@ export PATH="$HOME/.spin/bin:$PATH"
 
 # opencode
 export PATH=/home/hicro/.opencode/bin:$PATH
+
+# Google Chrome for Flutter
+export CHROME_EXECUTABLE=/usr/bin/google-chrome-stable
+
+# Visualize images in the terminal
+alias icat="kitten icat"
+
+# Opencode
+alias oc="opencode"
+
+# Activate the virtual environment
+alias se="source ./.venv/bin/activate"
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"

@@ -1,7 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
   "theme": "gruvbox",
-  // "model": "anthropic/claude-sonnet-4-20250514",
   "autoupdate": true,
   "permission": {
     "edit": "ask",
@@ -12,4 +11,14 @@
     "project_init": "<leader>i",
     "model_list": "<leader>m"
   }
+
+  // TODO: different agents for planning and building
+  // "agent": {
+  //   "plan": {
+  //     "model": ""
+  //   },
+  //   "build": {
+  //     "model": ""
+  //   }
+  // }
 }
