@@ -1,6 +1,6 @@
 [
   {
-    "key": "ctrl+b",
+    "key": "ctrl+e",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   {
@@ -41,5 +41,15 @@
     "key": "r",
     "command": "renameFile",
     "when": "filesExplorerFocus && !inputFocus"
+  },
+  {
+    "key": "alt+x",
+    "command": "kilo-code.ghost.generateSuggestions",
+    "when": "editorTextFocus && kilocode.ghost.enableSmartInlineTaskKeybinding && !editorTabMovesFocus && !github.copilot.completions.enabled && !inSnippetMode"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "-kilo-code.ghost.generateSuggestions",
+    "when": "editorTextFocus && kilocode.ghost.enableSmartInlineTaskKeybinding && !editorTabMovesFocus && !github.copilot.completions.enabled && !inSnippetMode"
   }
 ]
