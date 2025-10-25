@@ -1,7 +1,7 @@
 {
   // Editor configuration
-  "editor.fontFamily": "FantasqueSansM Nerd Font",
-  "editor.fontSize": 22,
+  "editor.fontFamily": "Fantasque Sans Mono",
+  "editor.fontSize": 16,
   "editor.rulers": [80],
   "editor.codeLens": false,
   "editor.renderWhitespace": "none",
@@ -15,7 +15,6 @@
   "editor.smoothScrolling": true,
   "editor.cursorSmoothCaretAnimation": "on",
   // Workbench
-  "workbench.iconTheme": "material-icon-theme",
   "workbench.editor.enablePreview": false,
   "workbench.editor.enablePreviewFromQuickOpen": false,
   "workbench.tree.renderIndentGuides": "always",
@@ -70,7 +69,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "javascript.preferences.importModuleSpecifier": "relative"
   },
-  "eslint.validate": ["javascript"],
   "javascript.updateImportsOnFileMove.enabled": "always",
   // JSON
   "[json]": {
@@ -84,10 +82,6 @@
   "[markdown]": {
     "editor.wordWrap": "off"
   },
-  // Go
-  "go.toolsManagement.autoUpdate": true,
-  // Rust
-  "rust-analyzer.inlayHints.bindingModeHints.enable": true,
   // Vim
   "vim.leader": ",",
   "vim.statusBarColorControl": false,
@@ -193,7 +187,7 @@
       "commands": ["editor.action.commentLine"]
     }
   ],
-  "window.zoomLevel": -1,
   "terminal.integrated.gpuAcceleration": "on",
+  "svelte.enable-ts-plugin": true,
   "workbench.activityBar.location": "hidden"
 }
