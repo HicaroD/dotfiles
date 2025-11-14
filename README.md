@@ -21,6 +21,12 @@
 | [i3][] (tiling window manager)                        |
 | Arch Linux ([manjaro][])                              |
 
+| Other tools                                  |
+| -------------------------------------------- |
+| [mongotui][] (simple TUI for MongoDB client) |
+| [yay][] (AUR helper)                         |
+| [zsh][] (shell)                              |
+
 [neovim]: https://github.com/HicaroD/nvim-cfg-lua
 [vscode]: https://code.visualstudio.com/
 [kitty]: https://sw.kovidgoyal.net/kitty/
@@ -28,6 +34,8 @@
 [i3]: https://i3wm.org/
 [manjaro]: https://manjaro.org/
 [tmux]: https://github.com/tmux/tmux
+[yay]: https://github.com/Jguer/yay
+[zsh]: https://www.zsh.org/
 
 ## Packages
 
