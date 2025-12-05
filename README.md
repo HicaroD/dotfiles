@@ -118,13 +118,11 @@ curl -fsSL https://get.pnpm.io/install.sh | sh - # pnpm for development
 ```
 
 ```bash
-npm install -g pyright # pyright
+npm install -g pyright # pyright for python
+npm install -g biome # biome - typescript / javascript toolchain
 npm install -g emmet-ls # emmet
-npm install -g prettier # prettier for code formatting
-npm i -g vscode-langservers-extracted # HTML, CSS, JSON, ESLint and more
-npm install -g typescript typescript-language-server # Typescript
-npm install -g @tailwindcss/language-server # LSP support for Tailwind
 npm install -g svelte-language-server # LSP support for Svelte
+npm install -g @tailwindcss/language-server # LSP support for Tailwind
 go install golang.org/x/tools/gopls@latest # Golang
 go install github.com/nametake/golangci-lint-langserver@latest # Golang
 go install github.com/golangci/golangci-lint/cmd/golangci-lint@latest # Golang
