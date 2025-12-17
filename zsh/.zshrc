@@ -94,14 +94,14 @@ fi
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
-alias notes="nvim ~/Documentos/Notes/"
-alias today="nvim ~/Documentos/Notes/today.md"
-alias words="nvim ~/Documentos/Notes/words.md"
-alias proj="cd ~/Documentos/Projects"
-alias ideas="nvim ~/Documentos/Notes/ideas.md"
-alias proto="cd ~/Documentos/Prototypes"
+alias notes="nvim ~/Documents/Notes/"
+alias today="nvim ~/Documents/Notes/today.md"
+alias words="nvim ~/Documents/Notes/words.md"
+alias proj="cd ~/Documents/Projects"
+alias ideas="nvim ~/Documents/Notes/ideas.md"
+alias proto="cd ~/Documents/Prototypes"
 alias zshrc="nvim ~/.zshrc"
-alias tolearn="nvim ~/Documentos/Notes/tolearn.md"
+alias tolearn="nvim ~/Documents/Notes/tolearn.md"
 alias vsc="vscodium"
 alias tmuxfzf="~/fzf_tmux.sh"
 alias gpo="git push origin"
@@ -174,17 +174,11 @@ case ":$PATH:" in
 esac
 # pnpm end
 
-# Direnv
-eval "$(direnv hook zsh)"
-
 # Corepack (you are annoying)
 export COREPACK_ENABLE_AUTO_PIN=0
 
 # VPS
 alias hicaro.space="ssh -i ~/.ssh/hicaro.space root@91.99.193.146"
-
-# Personal keys
-source ~/.keys
 
 alias sonoria1="ssh -i ~/.ssh/hicaro-sonoria -p 60000 hicaro_silva@200.133.123.136"
 alias sonoria2="ssh -i ~/.ssh/hicaro-sonoria -p 60001 hicaro_silva@200.133.123.136"

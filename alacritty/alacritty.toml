@@ -31,17 +31,5 @@ term = "xterm-256color"
 [font]
 size = 15
 
-[font.bold]
-family = "FantasqueSansM Nerd Font"
-style = "Bold"
-
-[font.italic]
-family = "FantasqueSansM Nerd Font"
-style = "Italic"
-
-[font.normal]
-family = "FantasqueSansM Nerd Font"
-style = "Regular"
-
 [mouse]
 hide_when_typing = true
