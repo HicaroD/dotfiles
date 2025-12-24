@@ -3,81 +3,71 @@
   "theme": "VSCode Dark Modern",
   "ui_font_size": 16,
   "buffer_font_size": 18.0,
-  "file_finder": {
-    "modal_width": "medium"
-  },
-  "buffer_font_family": "Fantasque Sans Mono",
+  "buffer_font_family": "FantasqueSansM Nerd Font Mono",
   "buffer_font_features": { "calt": false },
   // git
   "git": {
     "inline_blame": {
-      "enabled": false
+      "enabled": false,
     },
-    "git_gutter": "hide"
+    "git_gutter": "hide",
   },
   // // Vim mode settings
   "vim_mode": true,
-  "vim": {
-    "enable_vim_sneak": true
-  },
-  "relative_line_numbers": true,
+  "relative_line_numbers": "enabled",
   "tab_bar": {
-    "show": true
+    "show": true,
   },
   "scrollbar": {
-    "show": "never"
+    "show": "never",
   },
   "use_autoclose": false,
   "centered_layout": {
     "left_padding": 0.15,
-    "right_padding": 0.15
+    "right_padding": 0.15,
   },
   "inlay_hints": {
-    "enabled": false
+    "enabled": false,
   },
   // // LSP
   "lsp": {
     "tailwindcss-language-server": {
       "settings": {
-        "classAttributes": ["class", "className", "ngClass", "styles"]
-      }
-    }
+        "classAttributes": ["class", "className", "ngClass", "styles"],
+      },
+    },
   },
   "languages": {
     "TypeScript": {
       "format_on_save": "off",
-      "formatter": "prettier"
+      "formatter": "prettier",
     },
     "Python": {
       "format_on_save": "off",
       "formatter": "auto",
-      "language_servers": ["pyright-langserver"]
+      "language_servers": ["pyright-langserver"],
     },
     "Go": {
       "format_on_save": "off",
       "language_servers": ["gopls"],
-      "formatter": "auto"
-    },
-    "Svelte": {
-      "format_on_save": "off",
-      "formatter": "prettier"
+      "formatter": "auto",
     },
     "HTML": {
       "language_servers": ["vscode-html-language-server", "superhtml"],
-      "formatter": { "language_server": { "name": "superhtml" } }
-    }
+      "formatter": { "language_server": { "name": "superhtml" } },
+    },
   },
   // Use zed commit editor
   "terminal": {
     "font_family": "FantasqueSansM Nerd Font Mono",
     "env": {
-      "EDITOR": "zed --wait"
-    }
+      "EDITOR": "zed --wait",
+    },
   },
   // File syntax highlighting
   "file_types": {
     "Dockerfile": ["Dockerfile", "Dockerfile.*"],
-    "JSON": ["json", "jsonc", "*.code-snippets"]
+    "JSON": ["json", "jsonc", "*.code-snippets"],
   },
   // File scan exclusions, hide on the file explorer and search
   "file_scan_exclusions": [
@@ -101,36 +91,32 @@
     "**/.tap",
     "**/.nyc_output",
     "**/report",
-    "**/node_modules"
+    "**/node_modules",
   ],
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "project_panel": {
     "button": true,
     "dock": "left",
-    "git_status": true
+    "git_status": true,
   },
   "outline_panel": {
-    "dock": "right"
+    "dock": "right",
   },
   "collaboration_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   "notification_panel": {
-    "dock": "left"
-  },
-  "chat_panel": {
-    "dock": "left"
+    "dock": "left",
   },
   // AI
   "show_completions_on_input": true,
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "zed",
   },
   "edit_predictions": {
     "mode": "subtle",
-    "enabled_in_assistant": true
-  }
+  },
 }

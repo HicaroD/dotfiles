@@ -1,22 +1,23 @@
 [
   {
-    "context": "Editor && vim_mode == normal && !menu",
+    // Global context
     "bindings": {
-      "ctrl-h": "pane::ActivatePreviousItem",
-      "ctrl-l": "pane::ActivateNextItem"
-    }
+      ", e": "workspace::ToggleLeftDock",
+      ", f": "file_finder::Toggle",
+      ", c": "pane::CloseActiveItem",
+      ", p s": "workspace::NewSearch",
+    },
   },
   {
     "context": "FileFinder || (FileFinder > Picker > Editor) || (FileFinder > Picker > menu)",
     "bindings": {
       "ctrl-v": "pane::SplitRight",
-      "ctrl-h": "pane::SplitDown"
-    }
+      "ctrl-h": "pane::SplitDown",
+    },
   },
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
-      // put key-bindings here if you want them to work in normal & visual mode
       // Git
       ", g h d": "editor::ToggleSelectedDiffHunks",
       ", g h r": "git::Restore",
@@ -27,9 +28,6 @@
       // Toggle soft wrap
       ", u w": "editor::ToggleSoftWrap",
 
-      // NOTE: Toggle Zen mode, not fully working yet
-      ", c z": "workspace::ToggleCenteredLayout",
-
       // Open markdown preview
       ", m p": "markdown::OpenPreview",
       ", m P": "markdown::OpenPreviewToTheSide",
@@ -38,8 +36,8 @@
       ", s w": "pane::DeploySearch",
 
       // Go to file with `gf`
-      "g f": "editor::OpenExcerpts"
-    }
+      "g f": "editor::OpenExcerpts",
+    },
   },
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
@@ -47,6 +45,7 @@
       // +LSP
       ", l c a": "editor::ToggleCodeActions",
       ", r": "editor::Rename",
+      ", d": "editor::GoToDefinition",
       "g d": "editor::GoToDefinition",
       "g i": "editor::GoToImplementation",
       ", l t d": "editor::GoToTypeDefinition",
@@ -65,24 +64,20 @@
       "] h": "editor::GoToHunk",
       "[ h": "editor::GoToPreviousHunk",
 
-      // + Buffers
-      // File finder
-      ", f": "file_finder::Toggle",
-      // Project search
-      ", /": "pane::DeploySearch",
-      // Show project panel with current file
-      ", p s": "workspace::NewSearch",
-      ", c": "pane::CloseActiveItem",
-      ", e": "workspace::ToggleLeftDock",
       // Formatter
-      "ctrl-i": "editor::Format"
-    }
+      "ctrl-i": "editor::Format",
+
+      // Tab navigation
+      "ctrl-h": "vim::GoToPreviousTab",
+      "ctrl-l": "vim::GoToTab",
+    },
   },
   {
     // Vim: File Tree ("ProjectPanel") actions
     "context": "ProjectPanel && not_editing",
     "bindings": {
-      ", e": "workspace::ToggleLeftDock",
+      "ctrl-v": "project_panel::OpenSplitVertical",
+      "ctrl-h": "project_panel::OpenSplitHorizontal",
       "h": "project_panel::CollapseSelectedEntry",
       "l": "project_panel::ExpandSelectedEntry",
       "j": "menu::SelectNext",
@@ -96,7 +91,7 @@
       "p": "project_panel::Paste",
       "d": "project_panel::Delete",
       "a": "project_panel::NewFile",
-      "shift-y": "workspace::CopyRelativePath"
-    }
-  }
+      "shift-y": "workspace::CopyRelativePath",
+    },
+  },
 ]

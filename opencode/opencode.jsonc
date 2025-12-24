@@ -8,7 +8,6 @@
   },
   "keybinds": {
     "leader": "ctrl+x",
-    "project_init": "<leader>i",
     "model_list": "<leader>m"
   }
 
