@@ -6,6 +6,7 @@
       ", f": "file_finder::Toggle",
       ", c": "pane::CloseActiveItem",
       ", p s": "workspace::NewSearch",
+      ", o t": "workspace::NewTerminal"
     },
   },
   {
