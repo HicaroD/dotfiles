@@ -1,7 +1,6 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "theme": "opencode",
-  "autoupdate": true,
+  "theme": "gruvbox",
   "permission": {
     "edit": "ask",
     "bash": "ask"
@@ -10,26 +9,4 @@
     "leader": "ctrl+x",
     "model_list": "<leader>m"
   }
-
-  // TODO: set default model to Claude Sonnet 4.5
-  // "model": ""
-
-  // TODO: set small model to Claude Haiku (cost-effective)
-  // "small_model": ""
-
-  // TODO: different agents for planning and building
-
-  // NOTE: For the planning model, I'll probably be using the Claude Sonnet 4.5
-  // For the building model, I'll probably be using the Claude Haiku
-  // Planning requires a robust model, while building requires a simpler model
-  // to execute the planning done by the robust planning model.
-
-  // "agent": {
-  //   "plan": {
-  //     "model": ""
-  //   },
-  //   "build": {
-  //     "model": ""
-  //   }
-  // }
 }

@@ -203,3 +203,13 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 export PATH="$PATH:$HOME/Documentos/Projects/Personal/typescript-go/built/local"
+
+# bun completions
+[ -s "/Users/hicarodanrlley/.bun/_bun" ] && source "/Users/hicarodanrlley/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# opencode
+export PATH=/Users/hicarodanrlley/.opencode/bin:$PATH
