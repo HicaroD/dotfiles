@@ -108,6 +108,7 @@ alias gpo="git push origin"
 alias gmt="git mergetool --tool=neovim"
 alias lg="lazygit"
 alias randomkey="openssl rand -hex 50"
+alias maestro="OPENCODE_CONFIG_DIR=setup opencode"
 
 # Neovim
 alias vi="nvim"
@@ -213,3 +214,8 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 # opencode
 export PATH=/Users/hicarodanrlley/.opencode/bin:$PATH
+
+source ~/.keys
+
+# Added by Antigravity
+export PATH="/Users/hicarodanrlley/.antigravity/antigravity/bin:$PATH"
